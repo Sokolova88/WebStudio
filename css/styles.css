@@ -1,31 +1,25 @@
-/*
-accent #2196F3
-black color #000000
-title color  #212121;
-main text color #757575
-white color #FFFFFF
-footer link color rgba(255, 255, 255, 0.6)
+:root {
+  --logo-font: 'Raleway', sans-serif;
+  --main-font: 'Roboto', sans-serif;
 
-bg #FFFFFF
-hero bg #2F303A
-team bg #F5F4FA
-footer bg #2F303A
-*/
-
-/*
-fonts
-
-logo font Raleway 700
-hero font Roboto 900
-title font Roboto 700
-secondary font Roboto 500
-main font Roboto 400
-*/
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --hero-bg: #2f303a;
+  --team-bg: #f5f4fa;
+  --footer-bg: #2f303a;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--logo-font);
 }
