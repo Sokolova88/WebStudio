@@ -1,0 +1,31 @@
+/*
+accent #2196F3
+black color #000000
+title color  #212121;
+main text color #757575
+white color #FFFFFF
+footer link color rgba(255, 255, 255, 0.6)
+
+bg #FFFFFF
+hero bg #2F303A
+team bg #F5F4FA
+footer bg #2F303A
+*/
+
+/*
+fonts
+
+logo font Raleway 700
+hero font Roboto 900
+title font Roboto 700
+secondary font Roboto 500
+main font Roboto 400
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+}
