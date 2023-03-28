@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  background-color: var(--light-color);
 }
 
 ul {
@@ -136,4 +137,64 @@ a {
 
 .feature-desc {
   line-height: 1.71;
+}
+
+/* Section Our works */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+/* Section Our team */
+
+.team-section {
+  background-color: var(--team-bg);
+}
+
+.team-caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.link-map {
+  line-height: 1.7;
+  color: var(--light-color);
+}
+
+.link-mail,
+.link-tel {
+  line-height: 1.7;
+  color: var(--footer-link-color);
+}
+
+.link-map:hover,
+.link-map:focus,
+.link-mail:hover,
+.link-mail:focus,
+.link-tel:hover,
+.link-tel:focus {
+  color: var(--accent-color);
+}
+
+.link-map:active,
+.link-mail:active,
+.link-tel:active {
+  color: var(--accent-secondary-color);
 }
