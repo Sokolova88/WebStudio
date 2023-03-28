@@ -1,3 +1,5 @@
+/* Base styles */
+
 :root {
   --logo-font: 'Raleway', sans-serif;
   --main-font: 'Roboto', sans-serif;
@@ -31,6 +33,7 @@ a {
   text-decoration: none;
 }
 
+/* Styles for Studio page  */
 /* Header */
 
 /* logo */
@@ -197,4 +200,42 @@ a {
 .link-mail:active,
 .link-tel:active {
   color: var(--accent-secondary-color);
+}
+
+/* Styles for Portfolio page */
+
+/* Section Examples */
+
+.menu-button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--title-text-color);
+
+  background-color: var(--team-bg);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  color: var(--accent-secondary-color);
+
+  background-color: var(--accent-color);
+}
+
+.title-example {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.caption-example {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-text-color);
 }
