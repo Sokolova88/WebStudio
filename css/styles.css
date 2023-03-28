@@ -85,3 +85,41 @@ a {
 .contacts-link:active {
   color: var(--accent-secondary-color);
 }
+
+/* Section Hero */
+
+.hero {
+  background-color: var(--hero-bg);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: var(--accent-secondary-color);
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--accent-secondary-color);
+  text-align: center;
+
+  outline: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--accent-color);
+  background-color: var(--accent-secondary-color);
+}
