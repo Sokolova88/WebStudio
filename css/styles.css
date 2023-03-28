@@ -3,6 +3,7 @@
   --main-font: 'Roboto', sans-serif;
 
   --accent-color: #2196f3;
+  --accent-secondary-color: #ffcd00;
   --main-text-color: #757575;
   --title-text-color: #212121;
   --dark-color: #000000;
@@ -20,6 +21,67 @@ body {
   letter-spacing: 0.03em;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+/* logo */
 .logo {
   font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-secondary-color);
+
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+/* Navigation */
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-link:active {
+  color: var(--accent-secondary-color);
+}
+
+/* Contacts in header */
+
+.contacts-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-link:active {
+  color: var(--accent-secondary-color);
 }
