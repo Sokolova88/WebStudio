@@ -19,6 +19,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 ul {
@@ -122,4 +123,17 @@ a {
 .button:hover {
   color: var(--accent-color);
   background-color: var(--accent-secondary-color);
+}
+
+/* Section Feature */
+
+.feature-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.feature-desc {
+  line-height: 1.71;
 }
