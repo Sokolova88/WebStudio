@@ -64,6 +64,7 @@ a {
   color: var(--title-text-color);
 }
 
+.nav-link[current],
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -79,7 +80,7 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: currentColor;
 }
 
 .contacts-link:hover,
@@ -109,7 +110,7 @@ a {
 }
 
 .button {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -207,7 +208,7 @@ a {
 /* Section Examples */
 
 .menu-button {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
