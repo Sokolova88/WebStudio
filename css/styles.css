@@ -175,6 +175,11 @@ body {
   text-align: center;
 }
 
+.work-list {
+  /* font-size: 0 - remove margin from image */
+  font-size: 0;
+}
+
 /* Section Our team */
 
 .team-section {
