@@ -159,7 +159,17 @@ body {
   background-color: var(--hero-bg);
 }
 
+.wrap {
+  width: 696px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+}
+
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -171,7 +181,8 @@ body {
 }
 
 .button {
-  padding: 0;
+  min-width: 200px;
+  padding: 10px 24px;
 
   font-family: inherit;
   font-weight: 700;
