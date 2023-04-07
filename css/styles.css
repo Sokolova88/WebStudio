@@ -58,11 +58,20 @@ body {
   max-width: 100%;
 } */
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Styles for Studio page  */
 /* Header */
 
 /* logo */
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.2;
@@ -81,11 +90,27 @@ body {
 }
 
 /* Navigation */
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .nav-item + .nav-item {
+  margin-left: 50px;
+} */
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--title-text-color);
 }
 
@@ -100,8 +125,19 @@ body {
 }
 
 /* Contacts in header */
+.contacts-list {
+  display: flex;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
