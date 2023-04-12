@@ -61,7 +61,6 @@ body {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Styles for Studio page  */
@@ -127,6 +126,7 @@ body {
 /* Contacts in header */
 .contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts-item:not(:last-child) {
