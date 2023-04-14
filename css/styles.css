@@ -206,7 +206,25 @@ body {
   background-color: var(--accent-secondary-color);
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
 /* Section Feature */
+.section.feature {
+  padding-bottom: 0;
+}
+
 .feature-list {
   display: flex;
 }
