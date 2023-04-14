@@ -224,19 +224,16 @@ body {
 
 .feature-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-item {
   flex-basis: 270px;
 }
 
-.feature-item:not(:last-child) {
+.feature-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-
-/* .feature-item + .feature-item {
-  margin-left: 30px;
-} */
 
 .feature-title {
   margin-bottom: 10px;
@@ -254,9 +251,11 @@ body {
 /* Section Our works */
 
 .work-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   /* font-size: 0 - remove margin from image */
   font-size: 0;
-  justify-content: space-between;
 }
 
 /* Section Our team */
@@ -267,6 +266,7 @@ body {
 
 .team-list {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .team-item {
