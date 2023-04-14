@@ -302,7 +302,17 @@ body {
 /* Footer */
 
 .footer {
+  padding: 60px 0;
+
   background-color: var(--footer-bg);
+}
+
+.address {
+  margin-top: 28px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .link-map {
