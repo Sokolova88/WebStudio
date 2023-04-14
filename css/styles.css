@@ -205,8 +205,25 @@ body {
 }
 
 /* Section Feature */
+.feature-list {
+  display: flex;
+}
+
+.feature-item {
+  flex-basis: 270px;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .feature-item + .feature-item {
+  margin-left: 30px;
+} */
 
 .feature-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -220,6 +237,8 @@ body {
 /* Section Our works */
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
