@@ -180,6 +180,8 @@ body {
   text-transform: uppercase;
 }
 
+/* Common styles */
+
 .button {
   min-width: 200px;
   padding: 10px 24px;
