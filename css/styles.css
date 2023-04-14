@@ -268,7 +268,26 @@ body {
   background-color: var(--team-bg);
 }
 
+.team-list {
+  justify-content: space-between;
+}
+
+.team-item {
+  background-color: var(--light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-desc {
+  margin: 30px 0;
+
+  text-align: center;
+}
+
 .team-caption {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
