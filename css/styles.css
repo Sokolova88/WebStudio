@@ -53,10 +53,10 @@ body {
   margin: 0 auto;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
-} */
+}
 
 .flex {
   display: flex;
@@ -342,7 +342,7 @@ body {
 /* Styles for Portfolio page */
 
 /* Section Examples */
-
+/* Radio-button list */
 .button-list {
   justify-content: center;
   margin-bottom: 50px;
@@ -375,6 +375,7 @@ body {
   background-color: var(--accent-color);
 }
 
+/* Gallery */
 .examples-list {
   flex-wrap: wrap;
 }
@@ -391,7 +392,18 @@ body {
   margin-bottom: 30px;
 }
 
+.thumb {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.thumb-caption {
+  padding: 20px 24px;
+}
+
 .example-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
