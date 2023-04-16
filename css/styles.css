@@ -38,6 +38,8 @@ a {
   text-decoration: none;
 }
 
+/* Common styles */
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -51,6 +53,21 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 /* Rules for visually-hidden elements */
@@ -67,17 +84,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
 }
 
 /* Styles for Studio page  */
@@ -219,10 +225,6 @@ img {
 .button:hover {
   color: var(--accent-color);
   background-color: var(--accent-secondary-color);
-}
-
-.section {
-  padding: 94px 0;
 }
 
 .section-title {
