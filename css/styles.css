@@ -229,7 +229,7 @@ img {
   flex-wrap: wrap;
 }
 
-.feature-item {
+.feature-list > .feature-item {
   flex-basis: 270px;
 }
 
