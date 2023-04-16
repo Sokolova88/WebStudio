@@ -257,7 +257,7 @@ img {
 }
 
 .work-list > .work-item {
-  width: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .work-list > .work-item:not(:last-child) {
