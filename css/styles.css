@@ -248,7 +248,7 @@ img {
 }
 
 .feature-list > .feature-item {
-  flex-basis: 270px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-item:not(:nth-child(4n)) {
