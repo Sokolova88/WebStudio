@@ -264,6 +264,35 @@ img {
   margin-right: 30px;
 }
 
+.feature-item::before {
+  display: inline-block;
+  margin-bottom: 30px;
+  content: '';
+  height: 120px;
+  width: 100%;
+  background-color: var(--team-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  border-radius: 4px;
+}
+
+.feature-item.antenna::before {
+  background-image: url('../images/icons/icons-feature/antenna.svg');
+}
+
+.feature-item.clock::before {
+  background-image: url('../images/icons/icons-feature/clock.svg');
+}
+
+.feature-item.diagram::before {
+  background-image: url('../images/icons/icons-feature/diagram.svg');
+}
+
+.feature-item.astronaut::before {
+  background-image: url('../images/icons/icons-feature/astronaut.svg');
+}
+
 .feature-title {
   margin-bottom: 10px;
 
