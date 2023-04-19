@@ -384,10 +384,28 @@ img {
 }
 
 .team-position {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.2;
 }
 
+.social-list {
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.social-list > .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list > .social-item {
+  padding: 12px;
+  background-color: transparent;
+  background-size: 44px;
+  border: 1px solid yellowgreen;
+  border-radius: 50%;
+}
 /* Footer */
 
 .footer {
