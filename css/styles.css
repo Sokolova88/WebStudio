@@ -427,6 +427,10 @@ img {
   background-color: var(--footer-bg);
 }
 
+.footer > .flex {
+  justify-content: space-between;
+}
+
 .address {
   margin-top: 28px;
 }
@@ -459,6 +463,19 @@ img {
 .link-mail:active,
 .link-tel:active {
   color: var(--accent-secondary-color);
+}
+
+.footer-title {
+  margin-bottom: 20px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer .social-list {
+  padding: 0;
 }
 
 /* Styles for Portfolio page */
