@@ -406,6 +406,19 @@ img {
   border: 1px solid yellowgreen;
   border-radius: 50%;
 }
+
+/* Section Our Clients */
+
+.clients-list > .client-item {
+  flex-basis: calc((100% - 150px) / 6);
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list > .client-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Footer */
 
 .footer {
