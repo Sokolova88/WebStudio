@@ -4,14 +4,14 @@
   --logo-font: 'Raleway', sans-serif;
   --main-font: 'Roboto', sans-serif;
 
-  --accent-color: #2196f3;
+  --accent-color: #0777d0;
   --accent-secondary-color: #ffcd00;
   --main-text-color: #757575;
   --title-text-color: #212121;
   --dark-color: #000000;
   --light-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --team-bg: #f5f4fa;
+  --team-bg: #fed5014d;
   --footer-bg: #2f303a;
   --hero-bg: #c4c4c4;
   --hero-overlay: rgba(47, 48, 58, 0.4);
@@ -324,7 +324,7 @@ img {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: var(--accent-color);
 }
 
 .feature-desc {
