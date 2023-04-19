@@ -11,9 +11,10 @@
   --dark-color: #000000;
   --light-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --hero-bg: #2f303a;
   --team-bg: #f5f4fa;
   --footer-bg: #2f303a;
+  --hero-bg: #c4c4c4;
+  --hero-overlay: rgba(47, 48, 58, 0.4);
 }
 
 /* Global reset of styles by tag selector */
@@ -176,7 +177,15 @@ img {
 /* Section Hero */
 
 .section-hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   background-color: var(--hero-bg);
+  background-image: linear-gradient(to top, var(--hero-overlay), var(--hero-overlay)),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrap {
