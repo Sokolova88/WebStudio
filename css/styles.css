@@ -349,20 +349,22 @@ img {
 }
 
 .social-list {
-  justify-content: space-between;
   padding: 0 32px;
+}
+
+.social-list > .social-item {
+  /* flex-basis: calc((100% - 30px) / 4); */
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  background-color: transparent;
+  background-size: 44px;
+  border-radius: 50%;
 }
 
 .social-list > .social-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-list > .social-item {
-  padding: 12px;
-  background-color: transparent;
-  background-size: 44px;
-  border: 1px solid yellowgreen;
-  border-radius: 50%;
 }
 
 /* Section Our Clients */
