@@ -154,46 +154,25 @@ img {
   margin-right: 40px;
 }
 
-.contacts-link {
-  /* for position icon and link thourth ::before */
-  /* display: inline-flex;
-  align-items: center; */
+.contacts-item {
+  display: inline-flex;
+  align-items: center;
+}
 
+.contacts-link {
   display: block;
+  margin-left: 10px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: currentColor;
 }
 
-/* .contacts-link::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contacts-link.mail::before {
-  background-image: url('../images/icons/icons-contacts/envelope.svg');
-}
-
-.contacts-link.tel::before {
-  background-image: url('../images/icons/icons-contacts/smartphone.svg');
-} */
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
-
-/* .contacts-link:hover::before,
-.contacts-link:focus::before {
-  background-color: var(--accent-color);
-} */
 
 .contacts-link:active {
   color: var(--accent-secondary-color);
