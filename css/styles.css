@@ -154,19 +154,20 @@ img {
   margin-right: 40px;
 }
 
-.contacts-item {
+.contacts-link {
   display: inline-flex;
   align-items: center;
-}
-
-.contacts-link {
-  display: block;
-  margin-left: 10px;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: currentColor;
+}
+
+.icon.mail,
+.icon.tel {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts-link:hover,
@@ -373,12 +374,15 @@ img {
   flex-basis: calc((100% - 150px) / 6);
   padding: 16px 32px;
 
+  text-align: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .clients-list > .client-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Footer */
 
 .footer {
