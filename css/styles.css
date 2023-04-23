@@ -188,7 +188,7 @@ img {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-color: var(--hero-bg);
+  background-color: var(--footer-bg);
   background-image: linear-gradient(to top, var(--hero-overlay), var(--hero-overlay)),
     url('../images/hero/hero-bg.jpg');
   background-size: cover;
