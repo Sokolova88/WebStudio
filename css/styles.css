@@ -356,37 +356,66 @@ img {
 }
 
 .social-list {
-  padding: 0 32px;
-}
-
-.social-list > .social-item {
-  /* flex-basis: calc((100% - 30px) / 4); */
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-
-  background-color: transparent;
-  background-size: 44px;
-  border-radius: 50%;
+  justify-content: center;
 }
 
 .social-list > .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
+.social-item > .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.social-icon,
+.client-icon {
+  color: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  color: var(--accent-secondary-color);
+}
+
 /* Section Our Clients */
 
 .clients-list > .client-item {
   flex-basis: calc((100% - 150px) / 6);
-  padding: 16px 32px;
-
   text-align: center;
+}
+
+.clients-list > .client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list > .client-item:not(:last-child) {
-  margin-right: 30px;
+
+.client-link:hover {
+  border: 1px solid var(--accent-secondary-color);
+}
+
+.client-link:hover .client-icon {
+  color: var(--accent-color);
 }
 
 /* Footer */
