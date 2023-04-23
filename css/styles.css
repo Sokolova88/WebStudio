@@ -272,8 +272,11 @@ img {
   margin-right: 30px;
 }
 
-.feature-item > div {
-  padding: 25px 100px;
+.feature-item > .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
 
   background-color: var(--team-bg);
