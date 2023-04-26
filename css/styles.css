@@ -7,7 +7,7 @@
   --accent-color: #0777d0;
   --accent-secondary-color: #ffcd00;
   --main-text-color: #757575;
-  --title-text-color: #212121;
+  --title-text-color: #06237c;
   --dark-color: #000000;
   --light-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
@@ -90,6 +90,10 @@ img {
 /* Styles for Studio page  */
 /* Header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* logo */
 .logo {
   font-family: var(--logo-font);
@@ -124,6 +128,8 @@ img {
 } */
 
 .nav-link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -132,6 +138,25 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--accent-secondary-color);
+  opacity: 0;
+}
+
+.nav-link[current]::after {
+  opacity: 1;
 }
 
 .nav-link[current],
