@@ -11,7 +11,7 @@
   --dark-color: #000000;
   --light-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --team-bg: #fed5014d;
+  --team-bg: rgba(254, 213, 1, 0.25);
   --footer-bg: #2f303a;
   --hero-bg: #c4c4c4;
   --hero-overlay: rgba(47, 48, 58, 0.4);
@@ -303,14 +303,21 @@ img {
 }
 
 .work-list > .work-item {
-  position: relative;
-  top: 0;
-  left: 0;
   flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-list > .work-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.work-wrap {
+  position: relative;
+
+  border-radius: 4px;
+  overflow: hidden;
+
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .work-desc {
