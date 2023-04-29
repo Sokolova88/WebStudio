@@ -63,7 +63,7 @@
       <section class="section-hero">
         <div class="container wrap">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Section Features -->
@@ -598,14 +598,17 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-close-modal" type="button">
+        <button class="btn-close-modal" type="button" data-modal-close>
           <svg class="icon-close" width="11px" height="11px">
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- Script for dynamic operation of the modal window -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
