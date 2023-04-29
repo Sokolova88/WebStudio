@@ -666,9 +666,11 @@ img {
   right: 0;
   bottom: 0;
   background-color: #ffcc0071;
+  opacity: 1;
+  visibility: visible;
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
