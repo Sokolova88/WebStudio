@@ -270,6 +270,7 @@ img {
 /* Button styles */
 
 .button {
+  display: inline-block;
   min-width: 200px;
   padding: 10px 24px;
 
@@ -294,7 +295,8 @@ img {
     background-color var(--duration) var(--timing-function);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--accent-color);
   background-color: var(--accent-secondary-color);
   transform: scale(1.2);
