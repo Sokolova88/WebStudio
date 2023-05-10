@@ -64,6 +64,16 @@ body {
   padding: 94px 0;
 }
 
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -246,7 +256,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Common styles */
+/* Button styles */
 
 .button {
   min-width: 200px;
@@ -414,6 +424,7 @@ img {
   line-height: 1.2;
 }
 
+/* Styles for the social links */
 .social-list {
   justify-content: center;
 }
