@@ -525,12 +525,14 @@ img {
 .link-map {
   line-height: 1.7;
   color: var(--light-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .link-mail,
 .link-tel {
   line-height: 1.7;
   color: var(--footer-link-color);
+  transition: color var(--duration) var(--timing-function);
 }
 
 .link-map:hover,
