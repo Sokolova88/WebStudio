@@ -653,13 +653,15 @@ img {
 }
 
 /* The text overlay on the cards appears on hover */
-.overlay-text {
+.overlay-text-hover {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
 
+.overlay-text {
   padding: 63px 24px;
 
   font-size: 18px;
