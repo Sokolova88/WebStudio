@@ -639,8 +639,12 @@ img {
 
   overflow: hidden;
   background: var(--light-color);
+  box-shadow: none;
+
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
+/* The div thumb-overlay for text overlay on the cards */
 .thumb-overlay {
   position: relative;
   width: 100%;
@@ -648,6 +652,7 @@ img {
   overflow: hidden;
 }
 
+/* The text overlay on the cards appears on hover */
 .overlay-text {
   position: absolute;
   top: 0;
@@ -659,16 +664,21 @@ img {
 
   font-size: 18px;
   line-height: 1.6;
-
   color: var(--light-color);
-  /* background-color: rgba(33, 150, 243, 0.9); */
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
   transform: translateY(100%);
+
+  transition: transform var(--duration) var(--timing-function),
+    opacity var(--duration) var(--timing-function);
 }
 
 .example-link:hover .overlay-text,
 .example-link:focus .overlay-text {
   transform: translateY(0);
-  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
 }
 
 .thumb-caption {
