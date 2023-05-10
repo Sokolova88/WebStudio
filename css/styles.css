@@ -494,11 +494,13 @@ img {
   transition: border var(--duration) var(--timing-function);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--accent-secondary-color);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   color: var(--accent-color);
 }
 
