@@ -289,21 +289,17 @@ img {
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
+
+  transform: scale(1);
+  transition: transform var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
 }
 
 .button:hover {
   color: var(--accent-color);
   background-color: var(--accent-secondary-color);
-}
-
-.section-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-  text-align: center;
+  transform: scale(1.2);
 }
 
 /* Section Feature */
