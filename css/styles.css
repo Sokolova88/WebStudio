@@ -711,9 +711,14 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+
   background-color: #ffcc0071;
+
   opacity: 1;
   visibility: visible;
+
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function);
 }
 
 .backdrop.is-hidden {
