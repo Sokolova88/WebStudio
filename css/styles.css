@@ -156,8 +156,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  transition: color var(--duration) var(--timing-function);
 }
 
+/* Underlining the link of the current page */
 .nav-link::after {
   position: absolute;
   bottom: -1px;
@@ -171,6 +174,9 @@ img {
   border-radius: 2px;
   background-color: var(--accent-secondary-color);
   opacity: 0;
+
+  transition: opacity var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
 }
 
 .nav-link[current]::after {
