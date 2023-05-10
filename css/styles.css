@@ -116,8 +116,6 @@ img {
   line-height: 1.2;
   color: var(--accent-secondary-color);
 
-  text-decoration: none;
-
   transform: scale(1);
   transition: transform var(--duration) var(--timing-function);
 }
