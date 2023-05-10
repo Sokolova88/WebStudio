@@ -592,9 +592,14 @@ img {
   color: var(--title-text-color);
 
   background-color: var(--team-bg);
+  box-shadow: none;
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .menu-button:hover,
