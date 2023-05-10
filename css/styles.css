@@ -761,4 +761,22 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  outline: none;
+
+  transition: border var(--duration) var(--timing-function);
+}
+
+.btn-close-modal:hover,
+.btn-close-modal:focus {
+  border: 1px solid var(--accent-secondary-color);
+}
+
+.btn-close-modal .icon-close {
+  fill: currentColor;
+  transition: color var(--duration) var(--timing-function);
+}
+
+.btn-close-modal:hover .icon-close,
+.btn-close-modal:focus .icon-close {
+  color: var(--accent-color);
 }
