@@ -451,11 +451,14 @@ img {
 
   background-color: transparent;
   border-radius: 50%;
+
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .social-icon,
 .client-icon {
   color: #afb1b8;
+  transition: color var(--duration) var(--timing-function);
 }
 
 .social-link:hover,
