@@ -158,6 +158,10 @@ img {
   transition: color var(--duration) var(--timing-function);
 }
 
+.nav-link.current {
+  color: var(--accent-color);
+}
+
 /* Underlining the link of the current page */
 .nav-link::after {
   position: absolute;
@@ -177,11 +181,10 @@ img {
     background-color var(--duration) var(--timing-function);
 }
 
-.nav-link[current]::after {
+.nav-link.current::after {
   opacity: 1;
 }
 
-.nav-link[current],
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
