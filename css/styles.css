@@ -770,12 +770,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 
-  transition: border var(--duration) var(--timing-function);
+  transform: rotate(0);
+  transition: border var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
 }
 
 .btn-close-modal:hover,
 .btn-close-modal:focus {
+  transform: rotate(90deg);
   border: 1px solid var(--accent-secondary-color);
 }
 
