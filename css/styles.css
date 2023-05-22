@@ -517,6 +517,7 @@ img {
 
 .footer > .flex {
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .address {
@@ -564,6 +565,7 @@ img {
   color: #ffffff;
 }
 
+/* Social links in the footer */
 .footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -571,6 +573,67 @@ img {
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--accent-color);
+}
+
+/* Subscribe in the footer */
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+}
+
+.footer-input::placeholder,
+.footer-input {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:placeholder-shown {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Submit in the footer */
+.button-submit {
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.icon-btn-send {
+  margin-left: 10px;
+  color: var(--accent-secondary-color);
+
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.icon-btn-wink {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+
+  transform: translate(45px, calc(-50% - 40px));
+
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.button-submit:hover .icon-btn-send,
+.button-submit:focus .icon-btn-send {
+  transform: translate(45px, -45px);
+}
+
+.button-submit:hover .icon-btn-wink,
+.button-submit:focus .icon-btn-wink {
+  transform: translateY(-50%);
 }
 
 /* Styles for Portfolio page */
