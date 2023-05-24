@@ -1,3 +1,5 @@
+// Script to open and close a modal window
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
