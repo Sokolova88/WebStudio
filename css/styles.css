@@ -860,23 +860,165 @@ img {
 
 /* A form's subscribe */
 
-.form {
+.order-form {
   max-width: 448px;
+  text-align: center;
 }
 
-.modal-title {
-  margin-bottom: 12px;
+.form-title {
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-.fieldset {
-  display: flex;
-  flex-direction: column;
+/* A label as a main container */
+.form-field {
+  position: relative;
+
+  display: block;
+  margin-bottom: 26px;
+}
+
+/* An Input */
+.form-input {
   width: 100%;
-  margin-bottom: 10px;
+  padding: 11px 12px 11px 40px;
+}
+
+/* Common styles for input and textarea */
+.form-input,
+.form-comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: var(--main-text-color);
+  font-size: 16px;
+
+  transition: outline var(--duration) var(--timing-function);
+}
+
+/* A span as a label */
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+
+  transition: transform var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
+}
+
+/* An icon in input */
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  transition: color var(--duration) var(--timing-function);
+}
+
+/* A label for textarea */
+.form-label-comment {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+
+  transition: color var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
+}
+
+/* A textarea */
+.form-comment {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 12px;
+
+  resize: none;
+}
+
+/* An input checkbox */
+.form-field.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+/* The input is hidden via extra class visually-hidden*/
+/* Making a custom checkbox */
+.check-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.form-checkbox:checked + .check-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url('../images/icons/icons-form/check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+
+  transform: scale(1.2);
+}
+
+/* A span for conditions text */
+.form-label-check {
+  margin-left: 8px;
+
+  line-height: 1.7;
+}
+
+.link-conditions {
+  border-bottom: 1px solid var(--accent-secondary-color);
+  color: var(--accent-color);
+}
+
+/* States of elements in focus */
+.form-field:focus-within > .form-icon {
+  color: var(--accent-secondary-color);
+}
+
+.form-field:focus-within > .form-input,
+.form-field:focus-within > .form-comment {
+  outline: 1px solid var(--accent-secondary-color);
+}
+
+.form-field:focus-within > .form-label-comment {
+  color: var(--accent-secondary-color);
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--accent-color);
+  transform: translate(-28px, -40px);
+}
+
+.form-comment:not(:placeholder-shown) + .form-label-comment {
+  color: var(--accent-color);
+  transform: translateY(-32px);
 }
