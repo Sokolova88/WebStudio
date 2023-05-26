@@ -632,44 +632,61 @@
           </svg>
         </button>
 
-        <!-- A form's subscribe -->
-        <form action="#" method="post" name="subscribeForm" class="form js-speaker-form">
-          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <!-- A form's order -->
+        <form name="orderForm" class="order-form js-speaker-form">
+          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-          <label class="fieldset">
-            <span class="">Ім'я</span>
-            <input type="text" name="userName" autofocus />
+          <label class="form-field">
+            <input class="form-input" type="text" name="userName" placeholder=" " />
+            <span class="form-label">Ім'я</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-person-form"></use>
+            </svg>
           </label>
 
-          <label class="fieldset">
-            <span class="">Телефон</span>
-            <input type="tel" name="userPhone" />
+          <label class="form-field">
+            <input class="form-input" type="tel" name="userPhone" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-phone-form"></use>
+            </svg>
           </label>
 
-          <label class="fieldset">
-            <span class="">Пошта</span>
-            <input type="email" name="userEmail" />
+          <label class="form-field">
+            <input class="form-input" type="email" name="userEmail" placeholder=" " />
+            <span class="form-label">Пошта</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-email-form"></use>
+            </svg>
           </label>
 
-          <label class="fieldset">
-            <span class="">Коментар</span>
-            <textarea name="userComment" placeholder="Введіть текст"></textarea>
+          <label class="form-field">
+            <textarea class="form-comment" name="userComment" placeholder=" "></textarea>
+            <span class="form-label-comment">Коментар</span>
           </label>
 
-          <label class="fieldset">
-            <input type="checkbox" name="userConditions" />
-            <span>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+          <label class="form-field check">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="userConditions"
+              required
+            />
+            <span class="check-icon"></span>
+            <span class="form-label-check">
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="link-conditions">Умови договору</a>
+            </span>
           </label>
 
-          <!-- <div class="fieldset"> -->
           <button type="submit" class="button">Відправити</button>
-          <!-- </div> -->
         </form>
       </div>
     </div>
 
     <!-- Script for dynamic operation of the modal window -->
     <script src="./js/modal.js"></script>
+    <!-- Script to output form data to the console -->
     <script src="./js/speaker-form.js"></script>
   </body>
 </html>
