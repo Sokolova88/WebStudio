@@ -32,7 +32,7 @@
           <a class="logo" href="./index.html"> <span>Web</span>Studio </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html" current>Студія</a>
+              <a class="nav-link current" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./portfolio.html">Портфоліо</a>
@@ -524,6 +524,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="container flex">
         <div>
@@ -545,7 +546,7 @@
           </address>
         </div>
         <div>
-          <h2 class="footer-title">приєднуйтесь</h2>
+          <b class="footer-title">Приєднуйтесь</b>
           <ul class="social-list flex">
             <li class="social-item">
               <a
@@ -601,6 +602,24 @@
             </li>
           </ul>
         </div>
+        <div>
+          <!-- A form's subscribe -->
+          <form action="#" class="subscribe-form">
+            <label>
+              <b class="footer-title">Підпишіться на розсилку</b>
+              <input type="email" name="email" placeholder="E-mail" class="footer-input" />
+            </label>
+            <button type="submit" class="button button-submit">
+              Підписатися
+              <svg class="icon icon-btn-send" width="24px" height="24px">
+                <use href="./images/icons/sprite.svg#icon-btn-send"></use>
+              </svg>
+              <svg class="icon icon-btn-wink" width="24px" height="24px">
+                <use href="./images/icons/sprite.svg#icon-btn-wink"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -612,10 +631,70 @@
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <!-- A form's order -->
+        <form action="#" name="orderForm" class="order-form js-speaker-form">
+          <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
+
+          <label class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              name="userName"
+              placeholder=" "
+              minlength="2"
+              maxlength="15"
+              required
+            />
+            <span class="form-label">Ім'я</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-person-form"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input class="form-input" type="tel" name="userPhone" placeholder=" " required />
+            <span class="form-label">Телефон</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-phone-form"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input class="form-input" type="email" name="userEmail" placeholder=" " required />
+            <span class="form-label">Пошта</span>
+            <svg class="icon form-icon">
+              <use href="./images/icons/sprite.svg#icon-email-form"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <textarea class="form-comment" name="userComment" placeholder=" "></textarea>
+            <span class="form-label-comment">Коментар</span>
+          </label>
+
+          <label class="form-field check">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="userConditions"
+              required
+            />
+            <span class="check-icon"></span>
+            <span class="form-label-check">
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="link-conditions">Умови договору</a>
+            </span>
+          </label>
+
+          <button type="submit" class="button">Відправити</button>
+        </form>
       </div>
     </div>
 
     <!-- Script for dynamic operation of the modal window -->
     <script src="./js/modal.js"></script>
+    <!-- Script to output form data to the console -->
+    <script src="./js/speaker-form.js"></script>
   </body>
 </html>
