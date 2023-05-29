@@ -866,6 +866,7 @@ img {
 }
 
 .form-title {
+  display: block;
   margin-bottom: 24px;
 
   font-weight: 700;
@@ -1008,17 +1009,14 @@ img {
   outline: 1px solid var(--accent-secondary-color);
 }
 
-.form-field:focus-within > .form-label-comment {
-  color: var(--accent-secondary-color);
-}
-
 .form-field:focus-within > .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
   transform: translate(-28px, -40px);
 }
 
-.form-comment:not(:placeholder-shown) + .form-label-comment {
+.form-comment:not(:placeholder-shown) + .form-label-comment,
+.form-field:focus-within > .form-label-comment {
   color: var(--accent-color);
   transform: translateY(-32px);
 }
