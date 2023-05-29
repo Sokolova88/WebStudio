@@ -637,7 +637,15 @@
           <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
 
           <label class="form-field">
-            <input class="form-input" type="text" name="userName" placeholder=" " />
+            <input
+              class="form-input"
+              type="text"
+              name="userName"
+              placeholder=" "
+              minlength="2"
+              maxlength="15"
+              required
+            />
             <span class="form-label">Ім'я</span>
             <svg class="icon form-icon">
               <use href="./images/icons/sprite.svg#icon-person-form"></use>
@@ -645,7 +653,7 @@
           </label>
 
           <label class="form-field">
-            <input class="form-input" type="tel" name="userPhone" placeholder=" " />
+            <input class="form-input" type="tel" name="userPhone" placeholder=" " required />
             <span class="form-label">Телефон</span>
             <svg class="icon form-icon">
               <use href="./images/icons/sprite.svg#icon-phone-form"></use>
@@ -653,7 +661,7 @@
           </label>
 
           <label class="form-field">
-            <input class="form-input" type="email" name="userEmail" placeholder=" " />
+            <input class="form-input" type="email" name="userEmail" placeholder=" " required />
             <span class="form-label">Пошта</span>
             <svg class="icon form-icon">
               <use href="./images/icons/sprite.svg#icon-email-form"></use>
