@@ -197,11 +197,11 @@ img {
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.contacts-link {
+.contacts-list__link {
   display: inline-flex;
   align-items: center;
 
@@ -213,21 +213,17 @@ img {
   transition: color var(--duration) var(--timing-function);
 }
 
-.contacts-icon-mail,
-.contacts-icon-tel {
+.contacts-list__icon--mail,
+.contacts-list__icon--tel {
   margin-right: 10px;
 }
 
-.icon {
-  fill: currentColor;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var(--accent-color);
 }
 
-.contacts-link:active {
+.contacts-list__link:active {
   color: var(--accent-secondary-color);
 }
 
