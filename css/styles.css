@@ -82,6 +82,7 @@ img {
 
 .flex {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -320,9 +321,6 @@ img {
 }
 
 .feature-item > .icon-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   margin-bottom: 30px;
 
@@ -374,10 +372,6 @@ img {
 
   width: 100%;
   height: 70px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   font-weight: 700;
   line-height: 1.14;
@@ -433,18 +427,12 @@ img {
 }
 
 /* Styles for the social links */
-.social-list {
-  justify-content: center;
-}
 
 .social-list > .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-item > .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
 
@@ -482,9 +470,6 @@ img {
 }
 
 .client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 92px;
 
   border: 1px solid #afb1b8;
@@ -638,7 +623,6 @@ img {
 /* Section Examples */
 /* Radio-button list */
 .button-list {
-  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -823,10 +807,6 @@ img {
   width: 30px;
   height: 30px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -953,10 +933,6 @@ img {
 
 /* An input checkbox */
 .form-field.check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   margin-bottom: 30px;
 }
 
