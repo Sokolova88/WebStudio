@@ -439,7 +439,7 @@ img {
 }
 
 .social-list__icon,
-.client-list__icon {
+.clients-section__icon {
   color: #afb1b8;
   transition: color var(--duration) var(--timing-function);
 }
@@ -454,18 +454,18 @@ img {
   color: var(--accent-secondary-color);
 }
 
-/* Section Our Clients */
+/* Section Clients */
 
-.clients-list > .client-item {
+.clients-section__item {
   flex-basis: calc((100% - 150px) / 6);
   text-align: center;
 }
 
-.clients-list > .client-item:not(:last-child) {
+.clients-section__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.clients-section__link {
   height: 92px;
 
   border: 1px solid #afb1b8;
@@ -474,13 +474,13 @@ img {
   transition: border var(--duration) var(--timing-function);
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients-section__link:hover,
+.clients-section__link:focus {
   border: 1px solid var(--accent-secondary-color);
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.clients-section__link:hover .clients-section__icon,
+.clients-section__link:focus .clients-section__icon {
   color: var(--accent-color);
 }
 
