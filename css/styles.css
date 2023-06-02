@@ -339,19 +339,19 @@ img {
 
 /* Section Our works */
 
-.work-list {
+.work-section__list {
   flex-wrap: wrap;
 }
 
-.work-list > .work-item {
+.work-section__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.work-list > .work-item:not(:last-child) {
+.work-section__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-wrap {
+.work-section__wrap {
   position: relative;
 
   border-radius: 4px;
@@ -361,7 +361,7 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.work-desc {
+.work-section__desc {
   position: absolute;
   bottom: 0px;
   left: 0px;
