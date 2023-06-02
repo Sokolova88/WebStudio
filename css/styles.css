@@ -229,7 +229,7 @@ img {
 
 /* Section Hero */
 
-.section-hero {
+.hero-section {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -242,7 +242,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.section-hero__wrap {
+.hero-section__wrap {
   width: 696px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -250,7 +250,7 @@ img {
   text-align: center;
 }
 
-.section-hero__title {
+.hero-section__title {
   margin-bottom: 30px;
 
   font-weight: 900;
