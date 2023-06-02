@@ -242,7 +242,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.wrap {
+.section-hero__wrap {
   width: 696px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -250,7 +250,7 @@ img {
   text-align: center;
 }
 
-.hero-title {
+.section-hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
