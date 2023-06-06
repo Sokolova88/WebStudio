@@ -594,14 +594,14 @@ img {
   overflow: hidden;
 }
 
-.icon-btn--send {
+.button-submit__icon--send {
   margin-left: 10px;
   color: var(--accent-secondary-color);
 
   transition: transform var(--duration) var(--timing-function);
 }
 
-.icon-btn--wink {
+.button-submit__icon--wink {
   position: absolute;
   top: 50%;
   right: 28px;
@@ -611,13 +611,13 @@ img {
   transition: transform var(--duration) var(--timing-function);
 }
 
-.button-submit:hover .icon-btn--send,
-.button-submit:focus .icon-btn--send {
+.button-submit:hover .button-submit__icon--send,
+.button-submit:focus .button-submit__icon--send {
   transform: translate(45px, -45px);
 }
 
-.button-submit:hover .icon-btn--wink,
-.button-submit:focus .icon-btn--wink {
+.button-submit:hover .button-submit__icon--wink,
+.button-submit:focus .button-submit__icon--wink {
   transform: translateY(-50%);
 }
 
