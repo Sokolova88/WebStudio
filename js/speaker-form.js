@@ -7,6 +7,6 @@
     new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
     e.currentTarget.reset();
-    document.querySelector('[data-modal]').classList.add('is-hidden');
+    document.querySelector('[data-modal]').classList.add('backdrop--is-hidden');
   });
 })();
