@@ -776,13 +776,13 @@ img {
     visibility var(--duration) var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.modal--is-hidden {
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -803,7 +803,7 @@ img {
   transition: transform var(--duration) var(--timing-function);
 }
 /* Modal close button */
-.btn-close-modal {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -821,19 +821,19 @@ img {
     transform var(--duration) var(--timing-function);
 }
 
-.btn-close-modal:hover,
-.btn-close-modal:focus {
+.btn-close:hover,
+.btn-close:focus {
   transform: rotate(90deg);
   border: 1px solid var(--accent-secondary-color);
 }
 
-.btn-close-modal .icon-close {
+.btn-close .btn-close__icon {
   fill: currentColor;
   transition: color var(--duration) var(--timing-function);
 }
 
-.btn-close-modal:hover .icon-close,
-.btn-close-modal:focus .icon-close {
+.btn-close:hover .btn-close__icon,
+.btn-close:focus .btn-close__icon {
   color: var(--accent-color);
 }
 
