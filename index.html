@@ -664,11 +664,11 @@
           name="orderForm"
           class="order-form js-speaker-form"
         >
-          <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
+          <b class="order-form__title">Залиште свої дані, ми вам передзвонимо</b>
 
-          <label class="form-field">
+          <label class="order-form__field">
             <input
-              class="form-input"
+              class="order-form__input"
               type="text"
               name="userName"
               placeholder=" "
@@ -676,42 +676,48 @@
               maxlength="15"
               required
             />
-            <span class="form-label">Ім'я</span>
-            <svg class="icon form-icon">
+            <span class="order-form__label">Ім'я</span>
+            <svg class="icon order-form__icon">
               <use href="./images/icons/sprite.svg#icon-person-form"></use>
             </svg>
           </label>
 
-          <label class="form-field">
-            <input class="form-input" type="tel" name="userPhone" placeholder=" " required />
-            <span class="form-label">Телефон</span>
-            <svg class="icon form-icon">
+          <label class="order-form__field">
+            <input class="order-form__input" type="tel" name="userPhone" placeholder=" " required />
+            <span class="order-form__label">Телефон</span>
+            <svg class="icon order-form__icon">
               <use href="./images/icons/sprite.svg#icon-phone-form"></use>
             </svg>
           </label>
 
-          <label class="form-field">
-            <input class="form-input" type="email" name="userEmail" placeholder=" " required />
-            <span class="form-label">Пошта</span>
-            <svg class="icon form-icon">
+          <label class="order-form__field">
+            <input
+              class="order-form__input"
+              type="email"
+              name="userEmail"
+              placeholder=" "
+              required
+            />
+            <span class="order-form__label">Пошта</span>
+            <svg class="icon order-form__icon">
               <use href="./images/icons/sprite.svg#icon-email-form"></use>
             </svg>
           </label>
 
-          <label class="form-field">
-            <textarea class="form-comment" name="userComment" placeholder=" "></textarea>
-            <span class="form-label-comment">Коментар</span>
+          <label class="order-form__field">
+            <textarea class="order-form__comment" name="userComment" placeholder=" "></textarea>
+            <span class="order-form__label-comment">Коментар</span>
           </label>
 
-          <label class="form-field check flex">
+          <label class="order-form__field order-form__field--pos">
             <input
-              class="form-checkbox visually-hidden"
+              class="order-form__checkbox visually-hidden"
               type="checkbox"
               name="userConditions"
               required
             />
-            <span class="check-icon"></span>
-            <span class="form-label-check">
+            <span class="order-form__check-icon"></span>
+            <span class="order-form__check-label">
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="link-conditions">Умови договору</a>
             </span>

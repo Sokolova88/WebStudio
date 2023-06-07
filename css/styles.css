@@ -844,7 +844,7 @@ img {
   text-align: center;
 }
 
-.form-title {
+.order-form__title {
   display: block;
   margin-bottom: 24px;
 
@@ -856,7 +856,7 @@ img {
 }
 
 /* A label as a main container */
-.form-field {
+.order-form__field {
   position: relative;
 
   display: block;
@@ -864,14 +864,14 @@ img {
 }
 
 /* An Input */
-.form-input {
+.order-form__input {
   width: 100%;
   padding: 11px 12px 11px 40px;
 }
 
 /* Common styles for input and textarea */
-.form-input,
-.form-comment {
+.order-form__input,
+.order-form__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -882,7 +882,7 @@ img {
 }
 
 /* A span as a label */
-.form-label {
+.order-form__label {
   position: absolute;
   top: 50%;
   left: 42px;
@@ -898,7 +898,7 @@ img {
 }
 
 /* An icon in input */
-.form-icon {
+.order-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -911,7 +911,7 @@ img {
 }
 
 /* A label for textarea */
-.form-label-comment {
+.order-form__label-comment {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -926,7 +926,7 @@ img {
 }
 
 /* A textarea */
-.form-comment {
+.order-form__comment {
   width: 100%;
   min-height: 120px;
   padding: 12px 12px;
@@ -935,13 +935,16 @@ img {
 }
 
 /* An input checkbox */
-.form-field.check {
+.order-form__field--pos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
 /* The input is hidden via extra class visually-hidden*/
 /* Making a custom checkbox */
-.check-icon {
+.order-form__check-icon {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -950,7 +953,7 @@ img {
   transition: transform var(--duration) var(--timing-function);
 }
 
-.form-checkbox:checked + .check-icon {
+.order-form__checkbox:checked + .order-form__check-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url('../images/icons/icons-form/check.svg');
@@ -963,7 +966,7 @@ img {
 }
 
 /* A span for conditions text */
-.form-label-check {
+.order-form__check-label {
   margin-left: 8px;
 
   line-height: 1.7;
@@ -975,23 +978,23 @@ img {
 }
 
 /* States of elements in focus */
-.form-field:focus-within > .form-icon {
+.order-form__field:focus-within > .order-form__icon {
   color: var(--accent-secondary-color);
 }
 
-.form-field:focus-within > .form-input,
-.form-field:focus-within > .form-comment {
+.order-form__field:focus-within > .order-form__input,
+.order-form__field:focus-within > .order-form__comment {
   outline: 1px solid var(--accent-secondary-color);
 }
 
-.form-field:focus-within > .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.order-form__field:focus-within > .order-form__label,
+.order-form__input:not(:placeholder-shown) + .order-form__label {
   color: var(--accent-color);
   transform: translate(-28px, -40px);
 }
 
-.form-comment:not(:placeholder-shown) + .form-label-comment,
-.form-field:focus-within > .form-label-comment {
+.order-form__comment:not(:placeholder-shown) + .order-form__label-comment,
+.order-form__field:focus-within > .order-form__label-comment {
   color: var(--accent-color);
   transform: translateY(-32px);
 }
