@@ -64,7 +64,7 @@ body {
   padding: 94px 0;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -625,16 +625,17 @@ img {
 
 /* Section Examples */
 /* Radio-button list */
-.button-list {
+.filter {
   margin-bottom: 50px;
 }
 
-.button-list > .item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
 .menu-button {
   display: block;
+  min-width: 67px;
   padding: 6px 22px;
 
   font-family: inherit;
@@ -665,24 +666,24 @@ img {
 }
 
 /* Gallery */
-.examples-list {
+.gallery-list {
   flex-wrap: wrap;
 }
 
-.example-item {
+.gallery-list__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.example-item:not(:nth-child(3n)) {
+.gallery-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.example-item:not(:nth-last-child(-n + 3)) {
+.gallery-list__item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
-.example-link:hover .thumb,
-.example-link:focus .thumb {
+.gallery-list__link:hover .thumb,
+.gallery-list__link:focus .thumb {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -697,8 +698,8 @@ img {
   transition: box-shadow var(--duration) var(--timing-function);
 }
 
-/* The div thumb-overlay for text overlay on the cards */
-.thumb-overlay {
+/* The div thumb__overlay for text overlay on the cards */
+.thumb__overlay {
   position: relative;
   width: 100%;
   height: 294px;
@@ -706,7 +707,7 @@ img {
 }
 
 /* The text overlay on the cards appears on hover */
-.overlay-text-hover {
+.thumb__text--hover {
   position: absolute;
   top: 0;
   right: 0;
@@ -714,7 +715,7 @@ img {
   left: 0;
 }
 
-.overlay-text {
+.thumb__text {
   padding: 63px 24px;
 
   font-size: 18px;
@@ -730,19 +731,19 @@ img {
     opacity var(--duration) var(--timing-function);
 }
 
-.example-link:hover .overlay-text,
-.example-link:focus .overlay-text {
+.gallery-list__link:hover .thumb__text,
+.gallery-list__link:focus .thumb__text {
   transform: translateY(0);
   opacity: 1;
 }
 
-.thumb-caption {
+.thumb__caption {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.example-title {
+.thumb__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -752,7 +753,7 @@ img {
   color: var(--title-text-color);
 }
 
-.example-caption {
+.thumb__desc {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
