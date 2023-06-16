@@ -5,35 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Modern-normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <!-- Animate css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Custom css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container flex">
+      <div class="container">
         <!-- Navigation -->
-        <nav class="nav flex">
+        <nav class="nav">
           <a class="logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -93,7 +79,7 @@
           <h2 class="section__title visually-hidden">Особливості</h2>
           <ul class="feature-section__list">
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap flex">
+              <div class="feature-section__icon--wrap">
                 <svg class="icon animate__animated animate__zoomIn" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -104,7 +90,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap flex">
+              <div class="feature-section__icon--wrap">
                 <svg class="icon animate__animated animate__zoomIn" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-clock"></use>
                 </svg>
@@ -115,7 +101,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap flex">
+              <div class="feature-section__icon--wrap">
                 <svg class="icon animate__animated animate__zoomIn" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-diagram"></use>
                 </svg>
@@ -126,7 +112,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap flex">
+              <div class="feature-section__icon--wrap">
                 <svg class="icon animate__animated animate__zoomIn" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -143,7 +129,7 @@
       <section class="work-section section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="work-section__list flex">
+          <ul class="work-section__list">
             <li class="work-section__item">
               <div class="work-section__wrap">
                 <img
@@ -152,7 +138,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="work-section__desc flex animate__animated animate__zoomIn">
+                <h3 class="work-section__desc animate__animated animate__zoomIn">
                   Десктопні додатки
                 </h3>
               </div>
@@ -165,7 +151,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="work-section__desc flex animate__animated animate__zoomIn">
+                <h3 class="work-section__desc animate__animated animate__zoomIn">
                   Мобільні додатки
                 </h3>
               </div>
@@ -178,7 +164,7 @@
                   width="370"
                   height="294"
                 />
-                <h3 class="work-section__desc flex animate__animated animate__zoomIn">
+                <h3 class="work-section__desc animate__animated animate__zoomIn">
                   Дизайнерські рішення
                 </h3>
               </div>
@@ -190,7 +176,7 @@
       <section class="team-section section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team-section___list flex">
+          <ul class="team-section___list">
             <li class="team-section___item">
               <img
                 src="./images/team/designer.jpg"
@@ -201,14 +187,14 @@
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Ігор Дем'яненко</h3>
                 <p class="team-section___position">Product Designer</p>
-                <ul class="social-list flex">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Instagram"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -221,7 +207,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Twitter"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -234,7 +220,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Facebook"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -247,7 +233,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на LinkedIn"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -267,14 +253,14 @@
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Ольга Рєпіна</h3>
                 <p class="team-section___position">Frontend Developer</p>
-                <ul class="social-list flex">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Instagram"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -287,7 +273,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Twitter"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -300,7 +286,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Facebook"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -313,7 +299,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на LinkedIn"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -333,14 +319,14 @@
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Микола Тарасов</h3>
                 <p class="team-section___position">Marketing</p>
-                <ul class="social-list flex">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Instagram"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -353,7 +339,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Twitter"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -366,7 +352,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Facebook"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -379,7 +365,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на LinkedIn"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -399,14 +385,14 @@
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Михайло Єрмаков</h3>
                 <p class="team-section___position">UI Designer</p>
-                <ul class="social-list flex">
+                <ul class="social-list">
                   <li class="social-list__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Instagram"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -419,7 +405,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Twitter"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -432,7 +418,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на Facebook"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -445,7 +431,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Посилання на LinkedIn"
-                      class="social-list__link flex"
+                      class="social-list__link"
                     >
                       <svg class="social-list__icon icon" width="20px" height="20px">
                         <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -462,14 +448,14 @@
       <section class="clients-section section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="clients-section__list flex">
+          <ul class="clients-section__list">
             <li class="clients-section__item">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="41px" height="47px">
                   <use href="./images/icons/sprite.svg#icon-company-1"></use>
@@ -482,7 +468,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="40px" height="52px">
                   <use href="./images/icons/sprite.svg#icon-company-2"></use>
@@ -495,7 +481,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="43px" height="41px">
                   <use href="./images/icons/sprite.svg#icon-company-3"></use>
@@ -508,7 +494,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="84px" height="41px">
                   <use href="./images/icons/sprite.svg#icon-company-4"></use>
@@ -521,7 +507,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="63px" height="45px">
                   <use href="./images/icons/sprite.svg#icon-company-5"></use>
@@ -534,7 +520,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на сайт компанії"
-                class="clients-section__link flex"
+                class="clients-section__link"
               >
                 <svg class="clients-section__icon icon" width="94px" height="52px">
                   <use href="./images/icons/sprite.svg#icon-company-6"></use>
@@ -572,14 +558,14 @@
         <!-- Social links -->
         <div>
           <b class="footer__title">Приєднуйтесь</b>
-          <ul class="social-list flex">
+          <ul class="social-list">
             <li class="social-list__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Instagram"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -592,7 +578,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Twitter"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -605,7 +591,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Facebook"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -618,7 +604,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на LinkedIn"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-linkedin"></use>
@@ -646,12 +632,15 @@
           </form>
         </div>
       </div>
+      <div class="footer__copy">
+        <p class="footer__copy--text">Copyright &#169; by Anna SokoLova</p>
+      </div>
     </footer>
 
     <!-- Modal window -->
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal modal--is-hidden">
-        <button class="btn-close flex" type="button" data-modal-close>
+        <button class="btn-close" type="button" data-modal-close>
           <svg class="btn-close__icon" width="11px" height="11px">
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>

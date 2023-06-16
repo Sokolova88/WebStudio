@@ -5,30 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Modern normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <!-- Custom css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container flex">
+      <div class="container">
         <!-- Navigation -->
-        <nav class="nav flex">
+        <nav class="nav">
           <a class="logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -80,27 +66,27 @@
         <div class="container">
           <h1 class="section__title visually-hidden">Приклади наших робіт</h1>
 
-          <!-- Menu button list -->
-          <ul class="filter flex">
+          <!-- filter button list -->
+          <ul class="filter">
             <li class="filter__item">
-              <button class="menu-button" type="button">Усі</button>
+              <button class="filter-button" type="button">Усі</button>
             </li>
             <li class="filter__item">
-              <button class="menu-button" type="button">Веб-сайти</button>
+              <button class="filter-button" type="button">Веб-сайти</button>
             </li>
             <li class="filter__item">
-              <button class="menu-button" type="button">Додатки</button>
+              <button class="filter-button" type="button">Додатки</button>
             </li>
             <li class="filter__item">
-              <button class="menu-button" type="button">Дизайн</button>
+              <button class="filter-button" type="button">Дизайн</button>
             </li>
             <li class="filter__item-">
-              <button class="menu-button" type="button">Маркетинг</button>
+              <button class="filter-button" type="button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Gallery of works -->
-          <ul class="gallery-list flex">
+          <ul class="gallery-list">
             <li class="gallery-list__item">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
@@ -366,14 +352,14 @@
         <!-- Social links -->
         <div>
           <b class="footer__title">Приєднуйтесь</b>
-          <ul class="social-list flex">
+          <ul class="social-list">
             <li class="social-list__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Instagram"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-instagram"></use>
@@ -386,7 +372,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Twitter"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-twitter"></use>
@@ -399,7 +385,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на Facebook"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-facebook"></use>
@@ -412,7 +398,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Посилання на LinkedIn"
-                class="social-list__link social-list__link--footer flex"
+                class="social-list__link social-list__link--footer"
               >
                 <svg class="social-list__icon icon" width="20px" height="20px">
                   <use href="./images/icons/sprite.svg#icon-linkedin"></use>
