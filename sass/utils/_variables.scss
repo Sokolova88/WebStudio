@@ -1,0 +1,27 @@
+// Fonts
+$logo-font: 'Raleway', sans-serif;
+$main-font: 'Roboto', sans-serif;
+
+//Colors of text
+$accent-color: #0777d0;
+$accent-secondary-color: #ffcd00;
+$main-text-color: #757575;
+$title-text-color: #06237c;
+$dark-color: #000000;
+$light-color: #ffffff;
+$footer-link-color: rgba(255, 255, 255, 0.6);
+$header-bb: #ececec;
+$icon-color: #afb1b8;
+
+//Backgrounds
+$team-bg: rgba(254, 213, 1, 0.25);
+$footer-bg: #2f303a;
+$foter-social-bg: rgba(255, 255, 255, 0.1);
+$hero-bg: #c4c4c4;
+$hero-overlay: rgba(47, 48, 58, 0.4);
+$backdrop-bg: #ffcc0071;
+$gallery-overlay: rgba(254, 213, 1, 0.85);
+
+//Animation Properties
+$duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
