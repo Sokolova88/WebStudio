@@ -1,0 +1,12 @@
+/* Button styles */
+
+.button {
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $accent-secondary-color;
+    transform: scale(1.05);
+  }
+}
