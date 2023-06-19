@@ -1,0 +1,19 @@
+/* logo */
+.logo {
+  display: block;
+  font-family: $logo-font;
+  @include fontsProperties($fs: 26px, $lh: 1.2);
+  color: $accent-secondary-color;
+
+  transform: scale(1);
+  transition: transform $duration $timing-function;
+
+  &__accent {
+    color: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
+}
