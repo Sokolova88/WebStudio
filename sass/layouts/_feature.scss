@@ -1,0 +1,38 @@
+/* Section Feature */
+.feature-section {
+  padding-bottom: 0;
+}
+
+.feature-section__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-section__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+.feature-section__icon--wrap {
+  @include flex();
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $team-bg;
+  border-radius: 4px;
+}
+
+.feature-section__title {
+  margin-bottom: 10px;
+  @include fontsProperties($fw: 700, $lh: 1.14);
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.feature-section__desc {
+  line-height: 1.71;
+}
