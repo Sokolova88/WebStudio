@@ -1,0 +1,78 @@
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: $backdrop-bg;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition: opacity $duration $timing-function, visibility $duration $timing-function;
+}
+
+.backdrop--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal--is-hidden {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 40px;
+  border-radius: 4px;
+  background-color: $light-color;
+
+  transition: transform $duration $timing-function;
+}
+
+/* Modal close button */
+.btn-close {
+  @include flex();
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transform: rotate(0);
+  transition: border $duration $timing-function, transform $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: rotate(90deg);
+    border: 1px solid $accent-secondary-color;
+  }
+}
+
+.btn-close__icon {
+  fill: currentColor;
+  transition: color $duration $timing-function;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    color: $accent-color;
+  }
+}
