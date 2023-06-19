@@ -1,0 +1,9 @@
+/* Header */
+
+.header {
+  border-bottom: 1px solid $header-bb;
+
+  & > .container {
+    @include flex();
+  }
+}
