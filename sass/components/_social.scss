@@ -1,0 +1,41 @@
+/* Styles for the social links */
+.social-list {
+  @include flex();
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  @include flex();
+
+  @include socialBg(transparent);
+
+  transition: background-color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-list__icon {
+  color: $icon-color;
+  transition: color $duration $timing-function;
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    color: $accent-secondary-color;
+  }
+}
+
+/* Social links in the footer */
+.social-list__link--footer {
+  @include socialBg($foter-social-bg);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
