@@ -1,0 +1,30 @@
+/* Footer */
+.footer {
+  padding: 60px 0;
+
+  background-color: $footer-bg;
+}
+
+.footer--flex {
+  @include flex(flex, space-between, baseline);
+}
+
+.footer__title {
+  display: block;
+  margin-bottom: 20px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $light-color;
+}
+
+.footer__copy {
+  margin-top: 50px;
+  padding-top: 20px;
+
+  line-height: 1.7;
+  color: $footer-link-color;
+  text-align: center;
+  border-top: 1px solid $header-bb;
+}
