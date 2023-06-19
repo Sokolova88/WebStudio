@@ -1,0 +1,32 @@
+/* Section Hero */
+
+.hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-color: $footer-bg;
+  background-image: linear-gradient(to top, $hero-overlay, $hero-overlay),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section__wrap {
+  width: 696px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+}
+
+.hero-section__title {
+  margin-bottom: 30px;
+  @include fontsProperties($fs: 44px, $fw: 900, $ls: 0.06em, $lh: 1.4);
+
+  color: $accent-secondary-color;
+
+  text-align: center;
+  text-transform: uppercase;
+}
