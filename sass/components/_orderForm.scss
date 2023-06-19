@@ -1,0 +1,155 @@
+/* A form's order */
+.order-form {
+  max-width: 448px;
+  text-align: center;
+}
+
+.order-form__title {
+  display: block;
+  margin-bottom: 24px;
+  @include fontsProperties($fs: 20px, $fw: 700, $lh: 1.15);
+  text-align: center;
+  color: $title-text-color;
+}
+
+/* A label as a main container */
+
+.order-form__field {
+  position: relative;
+
+  display: block;
+  margin-bottom: 26px;
+}
+
+/* An Input */
+.order-form__input {
+  width: 100%;
+  padding: 11px 12px 11px 40px;
+}
+
+/* Common styles for input and textarea */
+
+.order-form__input,
+.order-form__comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: $main-text-color;
+  font-size: 16px;
+
+  transition: outline $duration $timing-function;
+}
+
+/* A span as a label */
+
+.order-form__label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  @include fontsProperties($fs: 12px, $ls: 0.01em);
+
+  color: $main-text-color;
+
+  transition: transform $duration $timing-function, color $duration $timing-function;
+}
+
+/* An icon in input */
+.order-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  transition: color $duration $timing-function;
+}
+
+/* A label for textarea */
+.order-form__label-comment {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  @include fontsProperties($fs: 12px, $ls: 0.01em);
+  color: $main-text-color;
+
+  transition: color $duration $timing-function, transform $duration $timing-function;
+}
+
+/* A textarea */
+
+.order-form__comment {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 12px;
+
+  resize: none;
+}
+
+/* An input checkbox */
+.order-form__field--pos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* The input is hidden via extra class visually-hidden*/
+/* Making a custom checkbox */
+.order-form__check-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: transform $duration $timing-function;
+}
+
+.order-form__checkbox:checked + .order-form__check-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url('../images/icons/icons-form/check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+
+  transform: scale(1.2);
+}
+
+/* A span for conditions text */
+.order-form__check-label {
+  margin-left: 8px;
+
+  line-height: 1.7;
+}
+
+.link-conditions {
+  border-bottom: 1px solid $accent-secondary-color;
+  color: $accent-color;
+}
+
+/* States of elements in focus */
+.order-form__field:focus-within > .order-form__icon {
+  color: $accent-secondary-color;
+}
+
+.order-form__field:focus-within > .order-form__input,
+.order-form__field:focus-within > .order-form__comment {
+  outline: 1px solid $accent-secondary-color;
+  border: none;
+}
+
+.order-form__field:focus-within > .order-form__label,
+.order-form__input:not(:placeholder-shown) + .order-form__label {
+  color: $accent-color;
+  transform: translate(-28px, -40px);
+}
+
+.order-form__comment:not(:placeholder-shown) + .order-form__label-comment,
+.order-form__field:focus-within > .order-form__label-comment {
+  color: $accent-color;
+  transform: translateY(-32px);
+}
