@@ -1,0 +1,39 @@
+/* Section Clients */
+.clients-section__list {
+  @include flex();
+}
+
+.clients-section__item {
+  flex-basis: calc((100% - 150px) / 6);
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-section__link {
+  @include flex();
+
+  height: 92px;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+
+  transition: border $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-secondary-color;
+  }
+}
+
+.clients-section__icon {
+  color: $icon-color;
+  transition: color $duration $timing-function;
+
+  .clients-section__link:hover &,
+  .clients-section__link:focus & {
+    color: $accent-color;
+  }
+}
