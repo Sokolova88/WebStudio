@@ -1,0 +1,43 @@
+/* Section Our team */
+.team-section {
+  background-color: $team-bg;
+}
+
+.team-section___list {
+  @include flex();
+
+  flex-wrap: wrap;
+}
+
+.team-section___item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  background-color: $light-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-section___desc {
+  padding: 30px 0;
+
+  text-align: center;
+}
+
+.team-section___caption {
+  margin-bottom: 10px;
+  @include fontsProperties($fs: 16px, $fw: 500);
+
+  color: $title-text-color;
+}
+
+.team-section___position {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.2;
+}
