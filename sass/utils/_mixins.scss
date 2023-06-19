@@ -1,0 +1,23 @@
+// Flex position
+@mixin flex($dtype: flex, $jc: center, $alit: center) {
+  display: $dtype;
+  justify-content: $jc;
+  align-items: $alit;
+}
+
+// Fonts properties
+@mixin fontsProperties($fs: 14px, $fw: 400, $ls: 0.03em, $lh: 1.2) {
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  line-height: $lh;
+}
+
+//Social links styles
+@mixin socialBg($bg) {
+  width: 44px;
+  height: 44px;
+
+  background-color: $bg;
+  border-radius: 50%;
+}
