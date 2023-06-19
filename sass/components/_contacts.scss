@@ -1,0 +1,32 @@
+/* Contacts in header */
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts-list__link {
+  @include flex(inline-flex, flex-start);
+  @include fontsProperties($fw: 500, $ls: 0.02em, $lh: 1.14);
+
+  color: currentColor;
+
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $accent-secondary-color;
+  }
+}
+
+.contacts-list__icon--mail,
+.contacts-list__icon--tel {
+  margin-right: 10px;
+}

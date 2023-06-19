@@ -1,0 +1,27 @@
+// Adress list
+.address {
+  margin-top: 28px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.address__link {
+  line-height: 1.7;
+  color: $footer-link-color;
+  transition: color $duration $timing-function;
+
+  &--map {
+    color: $light-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $accent-secondary-color;
+  }
+}
