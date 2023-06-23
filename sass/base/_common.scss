@@ -9,9 +9,20 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1200px;
+  }
 }
 
 .section {
