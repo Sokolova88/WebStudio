@@ -3,6 +3,10 @@
 .button {
   @extend %button;
 
+  transform: scale(1);
+  transition: transform $duration $timing-function, color $duration $timing-function,
+    background-color $duration $timing-function;
+
   &:hover,
   &:focus {
     color: $accent-color;
