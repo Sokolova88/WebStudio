@@ -1,4 +1,12 @@
 /* Section Our works */
+.work-section {
+  @media screen and (max-width: calc( $desktop - 1px)) {
+    display: none;
+  }
+
+  padding-top: 0;
+}
+
 .work-section__list {
   @include flex();
 

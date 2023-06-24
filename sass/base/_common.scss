@@ -20,22 +20,30 @@ body {
     width: 768px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 1200px;
   }
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
   text-align: center;
+  @include fontsProperties(28px, 700);
 
-  @include fontsProperties(36px, 700);
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    @include fontsProperties(36px, 700);
+  }
 }
 
 .icon {

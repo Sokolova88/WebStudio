@@ -1,15 +1,18 @@
 /* A form's order */
 .order-form {
-  max-width: 448px;
+  // max-width: 448px;
+
   text-align: center;
 }
 
 .order-form__title {
   display: block;
-  margin-bottom: 24px;
-  @include fontsProperties($fs: 20px, $fw: 700, $lh: 1.15);
+  margin-bottom: 12px;
+  @include fontsProperties($fs: 20px, $fw: 700, $ls: 0.06em, $lh: 1.15);
   text-align: center;
   color: $title-text-color;
+
+  // margin-bottom: 24px;
 }
 
 /* A label as a main container */
@@ -123,7 +126,11 @@
 .order-form__check-label {
   margin-left: 8px;
 
-  line-height: 1.7;
+  @include fontsProperties($fs: 12px, $fw: 400, $ls: 0.01em, $lh: 1.2);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.7;
+  }
 }
 
 .link-conditions {
