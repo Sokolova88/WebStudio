@@ -1,18 +1,23 @@
 /* A form's order */
 .order-form {
-  // max-width: 448px;
+  @media screen and (min-width: $desktop) {
+    max-width: 448px;
+  }
 
   text-align: center;
 }
 
 .order-form__title {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+
   @include fontsProperties($fs: 20px, $fw: 700, $ls: 0.06em, $lh: 1.15);
   text-align: center;
   color: $title-text-color;
 
-  // margin-bottom: 24px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 24px;
+  }
 }
 
 /* A label as a main container */
@@ -102,8 +107,8 @@
 /* The input is hidden via extra class visually-hidden*/
 /* Making a custom checkbox */
 .order-form__check-icon {
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
 
