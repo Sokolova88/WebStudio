@@ -119,7 +119,7 @@
 }
 
 .thumb__text {
-  padding: 77px 24px;
+  padding: 24px 24px;
   @include fontsProperties($fs: 18px, $lh: 1.6);
   color: $title-text-color;
 
@@ -130,6 +130,9 @@
 
   transition: transform $duration $timing-function, opacity $duration $timing-function;
 
+  @media screen and (min-width: 350px) {
+    padding: 77px 24px;
+  }
   @media screen and (min-width: $desktop) {
     padding: 63px 24px;
   }
