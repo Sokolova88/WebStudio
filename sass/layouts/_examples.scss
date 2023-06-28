@@ -3,13 +3,17 @@
 /* Section Examples */
 /* filter-button list */
 .filter {
-  @include flex();
+  @include flex($jc: flex-start);
+  flex-wrap: wrap;
+  margin: -8px;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: $desktop) {
+    @include flex($jc: center);
+  }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  margin: 8px;
 }
 
 .filter-button {
@@ -43,21 +47,42 @@
 
 /* Gallery */
 .gallery-list {
-  @include flex();
+  @media screen and (min-width: $desktop) {
+    @include flex();
+    flex-wrap: wrap;
 
-  flex-wrap: wrap;
+    // margin: -15px;
+  }
+}
+
+.gallery-list--mt {
+  margin-top: 40px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
 }
 
 .gallery-list__item {
-  flex-basis: calc((100% - 60px) / 3);
+  outline: 2px solid purple;
+  flex-basis: 100%;
 
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-  }
+  // margin: 15px;
+  // flex-basis: calc((100% - 60px) / 3);
+
+  // &:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
+
+  // &:not(:nth-last-child(-n + 3)) {
+  //   margin-bottom: 30px;
+  // }
 }
 
 .thumb {
@@ -94,7 +119,7 @@
 }
 
 .thumb__text {
-  padding: 63px 24px;
+  padding: 77px 24px;
   @include fontsProperties($fs: 18px, $lh: 1.6);
   color: $title-text-color;
 
@@ -104,6 +129,10 @@
   transform: translateY(100%);
 
   transition: transform $duration $timing-function, opacity $duration $timing-function;
+
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
 
   .gallery-list__link:hover &,
   .gallery-list__link:focus & {
