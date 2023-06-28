@@ -4,8 +4,12 @@
 }
 
 .nav-list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .nav-list__item:not(:last-child) {

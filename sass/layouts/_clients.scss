@@ -1,14 +1,26 @@
 /* Section Clients */
 .clients-section__list {
   @include flex();
+  flex-wrap: wrap;
+
+  margin: -15px;
+
+  // @media screen and (min-width: $desktop) {
+
+  // }
 }
 
 .clients-section__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 60px) / 2);
   text-align: center;
+  margin: 15px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 150px) / 6);
+
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 }
 

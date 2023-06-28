@@ -18,8 +18,4 @@
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
-
-  transform: scale(1);
-  transition: transform $duration $timing-function, color $duration $timing-function,
-    background-color $duration $timing-function;
 }

@@ -1,18 +1,23 @@
 /* Section Feature */
-.feature-section {
-  padding-bottom: 0;
-}
 
 .feature-section__list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature-section__item {
-  flex-basis: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -31,6 +36,9 @@
   @include fontsProperties($fw: 700, $lh: 1.14);
   text-transform: uppercase;
   color: $accent-color;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    text-align: center;
+  }
 }
 
 .feature-section__desc {
