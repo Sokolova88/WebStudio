@@ -2,6 +2,10 @@
 .contacts-list {
   display: none;
 
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: auto;
@@ -9,7 +13,13 @@
 }
 
 .contacts-list__item:not(:last-child) {
-  margin-right: 40px;
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
+  }
 }
 
 .contacts-list__link {

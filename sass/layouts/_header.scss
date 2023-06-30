@@ -1,12 +1,14 @@
 /* Header */
 
 .header {
-  display: flex;
+  // display: flex;
   min-height: 60px;
   border-bottom: 1px solid $header-bb;
 
   & > .container {
-    @include flex($jc: space-between);
+    @media screen and (min-width: $tablet) {
+      @include flex(flex, space-between, center);
+    }
 
     @media screen and (min-width: $desktop) {
       @include flex();
