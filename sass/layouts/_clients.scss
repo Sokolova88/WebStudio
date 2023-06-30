@@ -4,10 +4,6 @@
   flex-wrap: wrap;
 
   margin: -15px;
-
-  // @media screen and (min-width: $desktop) {
-
-  // }
 }
 
 .clients-section__item {
@@ -15,12 +11,12 @@
   text-align: center;
   margin: 15px;
 
-  @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 150px) / 6);
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
   }
 }
 
