@@ -1,6 +1,10 @@
 /* Contacts in header */
 .contacts-list {
-  display: none;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+  }
 
   @media screen and (min-width: $tablet) {
     display: block;
@@ -13,6 +17,10 @@
 }
 
 .contacts-list__item:not(:last-child) {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-top: 32px;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     margin-bottom: 10px;
   }
@@ -27,7 +35,6 @@
   @include fontsProperties($fw: 500, $ls: 0.02em, $lh: 1.14);
 
   color: currentColor;
-
   transition: color $duration $timing-function;
 
   &:hover,
@@ -37,6 +44,28 @@
 
   &:active {
     color: $accent-secondary-color;
+  }
+}
+
+.contacts-list__link--tel {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    @include fontsProperties($fs: 34px, $fw: 500, $ls: 0.03em, $lh: 1.2);
+    color: $accent-color;
+  }
+}
+
+.contacts-list__link--mail {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    @include fontsProperties($fs: 24px, $fw: 500, $ls: 0.03em, $lh: 1.2);
+    color: $light-color;
+  }
+}
+
+.contacts-list__icon {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
   }
 }
 
