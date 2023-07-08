@@ -4,17 +4,34 @@
   padding-bottom: 30px;
 
   background-color: $footer-bg;
-  text-align: center;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    text-align: center;
+  }
 }
 
 .footer--flex {
+  @media screen and (min-width: $tablet) {
+    flex-wrap: wrap;
+    @include flex(flex, space-around, baseline);
+  }
+
   @media screen and (min-width: $desktop) {
     @include flex(flex, space-between, baseline);
   }
 }
 
 .footer__pos {
-  margin-bottom: 60px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__pos--form {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__title {
@@ -28,10 +45,21 @@
 }
 
 .footer__copy {
-  padding-top: 20px;
+  padding-top: 30px;
 
   line-height: 1.7;
   color: $footer-link-color;
   text-align: center;
   border-top: 1px solid $header-bb;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 60px;
+  }
+}
+
+.icon-heart {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 5px;
 }

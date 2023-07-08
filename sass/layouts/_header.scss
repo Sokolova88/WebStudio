@@ -1,15 +1,7 @@
 /* Header */
 
 .header {
-  display: flex;
-  min-height: 60px;
+  position: relative;
+
   border-bottom: 1px solid $header-bb;
-
-  & > .container {
-    @include flex($jc: space-between);
-
-    @media screen and (min-width: $desktop) {
-      @include flex();
-    }
-  }
 }

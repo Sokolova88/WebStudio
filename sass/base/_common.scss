@@ -6,6 +6,11 @@ body {
   letter-spacing: 0.03em;
   color: $main-text-color;
   background-color: $light-color;
+
+  &.modal-open,
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .container {

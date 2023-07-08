@@ -4,10 +4,11 @@
 }
 
 .team-section___list {
-  @media screen and (min-width: $desktop) {
-    @include flex();
-
+  @media screen and (min-width: $tablet) {
+    display: flex;
     flex-wrap: wrap;
+
+    margin: -15px;
   }
 }
 
@@ -23,11 +24,13 @@
     }
   }
 
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
   @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 90px) / 4);
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 

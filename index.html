@@ -7,10 +7,7 @@
     <title>WebStudio</title>
 
     <!-- Animate css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -20,46 +17,124 @@
       <div class="container">
         <!-- Navigation -->
         <nav class="nav">
+          <!-- Logo company -->
           <a class="logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--current" href="./index.html">Студія</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="">Контакти</a>
-            </li>
-          </ul>
+
+          <!-- Mobile menu button -->
+          <button
+            type="button"
+            class="burger-button"
+            aria-expanded="false"
+            aria-controls="nav-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Перемикач меню навігації">
+              <use
+                class="icon burger-button__icon-menu"
+                href="./images/icons/sprite.svg#icon-burger-menu"
+              ></use>
+              <use
+                class="icon burger-button__icon-close"
+                href="./images/icons/sprite.svg#icon-burger-close"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- A wrapper of the menu -->
+          <div class="nav-container" id="nav-container" data-menu>
+            <!-- Nav-menu -->
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link nav-list__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="">Контакти</a>
+              </li>
+            </ul>
+
+            <!-- Contacts -->
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link contacts-list__link--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg
+                    class="contacts-list__icon contacts-list__icon--mail icon"
+                    width="16px"
+                    height="12px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link contacts-list__link--tel" href="tel:+380961111111">
+                  <svg
+                    class="contacts-list__icon contacts-list__icon--tel icon"
+                    width="10px"
+                    height="16px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <!-- Social list for mobile menu only -->
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Instagram"
+                  class="mobile-social__link"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Twitter"
+                  class="mobile-social__link"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Facebook"
+                  class="mobile-social__link"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на LinkedIn"
+                  class="mobile-social__link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <!-- Contacts -->
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:info@devstudio.com">
-              <svg
-                class="contacts-list__icon contacts-list__icon--mail icon"
-                width="16px"
-                height="12px"
-              >
-                <use href="./images/icons/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+380961111111">
-              <svg
-                class="contacts-list__icon contacts-list__icon--tel icon"
-                width="10px"
-                height="16px"
-              >
-                <use href="./images/icons/sprite.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <!-- Main content -->
@@ -68,7 +143,8 @@
       <section class="hero-section">
         <div class="hero-section__wrap container">
           <h1 class="hero-section__title animate__animated animate__pulse">
-            Ефективні рішення для вашого бізнесу
+            Ефективні рішення для<br />
+            вашого бізнесу
           </h1>
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
@@ -227,7 +303,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item" aria-label="Посилання на LinkedIn">
+                  <li class="social-list__item">
                     <a
                       href="https://ua.linkedin.com/"
                       target="_blank"
@@ -293,7 +369,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item" aria-label="Посилання на LinkedIn">
+                  <li class="social-list__item">
                     <a
                       href="https://ua.linkedin.com/"
                       target="_blank"
@@ -359,7 +435,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item" aria-label="Посилання на LinkedIn">
+                  <li class="social-list__item">
                     <a
                       href="https://ua.linkedin.com/"
                       target="_blank"
@@ -425,7 +501,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item" aria-label="Посилання на LinkedIn">
+                  <li class="social-list__item">
                     <a
                       href="https://ua.linkedin.com/"
                       target="_blank"
@@ -598,7 +674,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item" aria-label="Посилання на LinkedIn">
+            <li class="social-list__item">
               <a
                 href="https://ua.linkedin.com/"
                 target="_blank"
@@ -613,7 +689,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__pos">
+        <div class="footer__pos footer__pos--form">
           <!-- A form's subscribe -->
           <form method="POST" action="javascript:void(0);" class="subscribe-form">
             <label>
@@ -633,7 +709,13 @@
         </div>
       </div>
       <div class="footer__copy">
-        <p class="footer__copy--text">Copyright &#169; by Anna SokoLova</p>
+        <p class="footer__copy--text">
+          Copyright &#169;
+          <svg class="icon icon-heart" width="28px" height="28px">
+            <use href="./images/icons/sprite.svg#icon-heart"></use>
+          </svg>
+          by Anna SokoLova
+        </p>
       </div>
     </footer>
 
@@ -717,6 +799,8 @@
       </div>
     </div>
 
+    <!-- Script for dynamic operation of the mobile-burger-menu -->
+    <script src="./js/burger-menu.js"></script>
     <!-- Script for dynamic operation of the modal window -->
     <script src="./js/modal.js"></script>
     <!-- Script to output form data to the console -->
