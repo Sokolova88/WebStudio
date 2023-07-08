@@ -2,14 +2,14 @@
 .logo {
   display: block;
   font-family: $logo-font;
-  @include fontsProperties($fs: 24px, $ls: 0.7, $lh: 1.2);
+  @include fontsProperties($fs: 24px, $fw: 700, $ls: 0.7, $lh: 1.2);
   color: $accent-secondary-color;
 
   transform: scale(1);
   transition: transform $duration $timing-function;
 
   @media screen and (min-width: $desktop) {
-    @include fontsProperties($fs: 26px, $lh: 1.2);
+    @include fontsProperties($fs: 26px, $fw: 700, $ls: 0.7, $lh: 1.2);
   }
 
   &__accent {
