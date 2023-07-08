@@ -1,35 +1,144 @@
-/* Navigation */
+//Navigation
 .nav {
-  @include flex();
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    // positioning the logo and the burger-button
+    @include flex($jc: space-between);
+  }
+}
+
+// Mobile menu button
+.burger-button {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  display: inline-flex;
+  z-index: 50;
+
+  padding: 0;
+  border: 0;
+  color: $main-text-color;
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+
+  transform: rotate(0);
+  transition: color $duration $timing-function, transform $duration $timing-function;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  & .burger-button__icon-close {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.is-open .burger-button__icon-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.is-open .burger-button__icon-close {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover .burger-button__icon-menu,
+  &:focus .burger-button__icon-menu {
+    color: $accent-color;
+  }
+
+  &.is-open:hover .burger-button__icon-close,
+  &.is-open:focus .burger-button__icon-close {
+    color: $accent-color;
+  }
+}
+
+.nav-container {
+  display: flex;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 45;
+
+    flex-direction: column;
+    padding: 40px;
+
+    background-color: $mobile-menu-bg;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateX(-100%);
+
+    transition: transform $duration $timing-function, opacity $duration $timing-function,
+      visibility $duration $timing-function;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: initial;
+      overflow-y: auto;
+
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    align-items: center;
+  }
 }
 
 .nav-list {
-  display: none;
-
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 88px;
+    margin-right: 96px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
+    margin-right: 305px;
   }
 }
 
 .nav-list__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
 }
 
 .nav-list__link {
-  position: relative;
-
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @include fontsProperties($fw: 500, $ls: 0.02em, $lh: 1.14);
-  color: $main-text-color;
+  @include fontsProperties($fs: 40px, $fw: 500, $lh: 1.2);
+  color: #212121;
 
   transition: color $duration $timing-function;
+
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include fontsProperties($fs: 14px, $fw: 500, $ls: 0.02em, $lh: 1.14);
+    color: $main-text-color;
+  }
 
   &:hover,
   &:focus {
@@ -43,26 +152,64 @@
 
 /* Underlining the link of the current page */
 .nav-list__link::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
 
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
 
-  border-radius: 2px;
-  background-color: $accent-secondary-color;
-  opacity: 0;
+    border-radius: 2px;
+    background-color: $accent-secondary-color;
+    opacity: 0;
 
-  transition: opacity $duration $timing-function, background-color $duration $timing-function;
+    transition: opacity $duration $timing-function, background-color $duration $timing-function;
+  }
 }
 
 .nav-list__link--current {
   color: $accent-color;
+}
 
-  &::after {
-    opacity: 1;
+.nav-list__link--current.nav-list__link::after {
+  color: $accent-color;
+  opacity: 1;
+}
+
+.mobile-social {
+  display: none;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 64px;
   }
+}
+
+.mobile-social__item {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 450px) {
+    margin-bottom: 10px;
+  }
+}
+
+.mobile-social__item:not(:last-child)::after {
+  content: '';
+  display: block;
+  width: 22px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mobile-social__link {
+  display: block;
+  @include fontsProperties($fs: 18px, $fw: 500, $lh: 1.2);
+  color: $accent-color;
 }
