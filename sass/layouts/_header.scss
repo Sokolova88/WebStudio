@@ -1,17 +1,7 @@
 /* Header */
 
 .header {
-  // display: flex;
-  min-height: 60px;
+  position: relative;
+
   border-bottom: 1px solid $header-bb;
-
-  & > .container {
-    @media screen and (min-width: $tablet) {
-      @include flex(flex, space-between, center);
-    }
-
-    @media screen and (min-width: $desktop) {
-      @include flex();
-    }
-  }
 }
