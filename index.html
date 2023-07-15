@@ -211,41 +211,71 @@
           <ul class="work-section__list">
             <li class="work-section__item">
               <div class="work-section__wrap">
-                <img
-                  src="./images/works/desktop.jpg"
-                  alt="Розробка додатків для робочого столу"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="work-section__desc animate__animated animate__zoomIn">
-                  Десктопні додатки
-                </h3>
+                <picture>
+                  <source
+                    srcset="./images/works/desktop.webp 1x, ./images/works/desktop-2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/works/desktop.jpg 1x, ./images/works/desktop-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./images/works/desktop.jpg"
+                    alt="Розробка додатків для робочого столу"
+                  />
+                </picture>
+
+                <h3 class="work-section__desc">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-section__item">
               <div class="work-section__wrap">
-                <img
-                  src="./images/works/phone_app.jpg"
-                  alt="Розробка додатків для телефону"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="work-section__desc animate__animated animate__zoomIn">
-                  Мобільні додатки
-                </h3>
+                <picture>
+                  <source
+                    srcset="./images/works/phone_app.webp 1x, ./images/works/phone_app-2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/works/phone_app.jpg 1x, ./images/works/phone_app-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./images/works/phone_app.jpg"
+                    alt="Розробка додатків для телефону"
+                  />
+                </picture>
+
+                <h3 class="work-section__desc">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work-section__item">
               <div class="work-section__wrap">
-                <img
-                  src="./images/works/tab_app.jpg"
-                  alt="Розробка додатків для планшету"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="work-section__desc animate__animated animate__zoomIn">
-                  Дизайнерські рішення
-                </h3>
+                <picture>
+                  <source
+                    srcset="./images/works/tab_app.webp 1x, ./images/works/tab_app-2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/works/tab_app.jpg 1x, ./images/works/tab_app-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./images/works/tab_app.jpg"
+                    alt="Розробка додатків для планшету"
+                  />
+                </picture>
+
+                <h3 class="work-section__desc">Дизайнерські рішення</h3>
               </div>
             </li>
           </ul>
@@ -257,12 +287,51 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-section___list">
             <li class="team-section___item">
-              <img
-                src="./images/team/designer.jpg"
-                alt="Ігор Дем'яненко Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Images for desktop -->
+                <source
+                  srcset="
+                    ./images/team/designer-desk.webp    1x,
+                    ./images/team/designer-desk-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/designer-desk.jpg 1x, ./images/team/designer-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for tablet -->
+                <source
+                  srcset="./images/team/designer-tab.webp 1x, ./images/team/designer-tab-2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/designer-tab.jpg 1x, ./images/team/designer-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for mobile -->
+                <source
+                  srcset="./images/team/designer-mob.webp 1x, ./images/team/designer-mob-2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/designer-mob.jpg 1x, ./images/team/designer-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/team/designer-desk.jpg"
+                  alt="Ігор Дем'яненко Product Designer"
+                />
+              </picture>
+
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Ігор Дем'яненко</h3>
                 <p class="team-section___position">Product Designer</p>
@@ -323,12 +392,60 @@
               </div>
             </li>
             <li class="team-section___item">
-              <img
-                src="./images/team/developer.jpg"
-                alt="Ольга Рєпіна Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Images for desktop -->
+                <source
+                  srcset="
+                    ./images/team/developer-desk.webp    1x,
+                    ./images/team/developer-desk-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/developer-desk.jpg    1x,
+                    ./images/team/developer-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for tablet -->
+                <source
+                  srcset="
+                    ./images/team/developer-tab.webp    1x,
+                    ./images/team/developer-tab-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/developer-tab.jpg 1x, ./images/team/developer-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for mobile -->
+                <source
+                  srcset="
+                    ./images/team/developer-mob.webp    1x,
+                    ./images/team/developer-mob-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/developer-mob.jpg 1x, ./images/team/developer-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/team/developer-desk.jpg"
+                  alt="Ольга Рєпіна Frontend Developer"
+                />
+              </picture>
+
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Ольга Рєпіна</h3>
                 <p class="team-section___position">Frontend Developer</p>
@@ -389,12 +506,60 @@
               </div>
             </li>
             <li class="team-section___item">
-              <img
-                src="./images/team/marketing.jpg"
-                alt="Микола Тарасов Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Images for desktop -->
+                <source
+                  srcset="
+                    ./images/team/marketing-desk.webp    1x,
+                    ./images/team/marketing-desk-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketing-desk.jpg    1x,
+                    ./images/team/marketing-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for tablet -->
+                <source
+                  srcset="
+                    ./images/team/marketing-tab.webp    1x,
+                    ./images/team/marketing-tab-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/marketing-tab.jpg 1x, ./images/team/marketing-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for mobile -->
+                <source
+                  srcset="
+                    ./images/team/marketing-mob.webp    1x,
+                    ./images/team/marketing-mob-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/marketing-mob.jpg 1x, ./images/team/marketing-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/team/marketing.jpg"
+                  alt="Микола Тарасов Marketing"
+                />
+              </picture>
+
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Микола Тарасов</h3>
                 <p class="team-section___position">Marketing</p>
@@ -455,12 +620,44 @@
               </div>
             </li>
             <li class="team-section___item">
-              <img
-                src="./images/team/ui.jpg"
-                alt="Михайло Єрмаков UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Images for desktop -->
+                <source
+                  srcset="./images/team/ui-desk.webp 1x, ./images/team/ui-desk-2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/ui-desk.jpg 1x, ./images/team/ui-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for tablet -->
+                <source
+                  srcset="./images/team/ui-tab.webp 1x, ./images/team/ui-tab-2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/ui-tab.jpg 1x, ./images/team/ui-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!-- Images for mobile -->
+                <source
+                  srcset="./images/team/ui-mob.webp 1x, ./images/team/ui-mob-2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/ui-mob.jpg 1x, ./images/team/ui-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img loading="lazy" src="./images/team/ui.jpg" alt="Михайло Єрмаков UI Designer" />
+              </picture>
+
               <div class="team-section___desc">
                 <h3 class="team-section___caption">Михайло Єрмаков</h3>
                 <p class="team-section___position">UI Designer</p>
