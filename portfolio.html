@@ -173,12 +173,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/technoquack.jpg"
-                      alt="Технокряк"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-mob.webp    450w,
+                          ./images/portfolio/technoquack-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-mob.jpg    450w,
+                          ./images/portfolio/technoquack-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-tab.webp    354w,
+                          ./images/portfolio/technoquack-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-tab.jpg    354w,
+                          ./images/portfolio/technoquack-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-desk.webp    370w,
+                          ./images/portfolio/technoquack-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/technoquack-desk.jpg    370w,
+                          ./images/portfolio/technoquack-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/technoquack-desk.jpg"
+                        alt="Технокряк"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -199,12 +264,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/poster.jpg"
-                      alt="Постер New Orlean vs Golden Star"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-mob.webp    450w,
+                          ./images/portfolio/poster-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-mob.jpg    450w,
+                          ./images/portfolio/poster-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-tab.webp    354w,
+                          ./images/portfolio/poster-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-tab.jpg    354w,
+                          ./images/portfolio/poster-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-desk.webp    370w,
+                          ./images/portfolio/poster-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/poster-desk.jpg    370w,
+                          ./images/portfolio/poster-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/poster-desk.jpg"
+                        alt="Технокряк"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -221,17 +351,81 @@
                 </div>
               </a>
             </li>
-
             <li class="gallery-list__item">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/seafood.jpg"
-                      alt="Ресторан Seafood"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-mob.webp    450w,
+                          ./images/portfolio/seafood-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-mob.jpg    450w,
+                          ./images/portfolio/seafood-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-tab.webp    354w,
+                          ./images/portfolio/seafood-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-tab.jpg    354w,
+                          ./images/portfolio/seafood-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-desk.webp    370w,
+                          ./images/portfolio/seafood-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seafood-desk.jpg    370w,
+                          ./images/portfolio/seafood-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/seafood-desk.jpg"
+                        alt="Ресторан Seafood"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -252,12 +446,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/prime.jpg"
-                      alt="Проєкт Prime"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-mob.webp    450w,
+                          ./images/portfolio/prime-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-mob.jpg    450w,
+                          ./images/portfolio/prime-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-tab.webp    354w,
+                          ./images/portfolio/prime-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-tab.jpg    354w,
+                          ./images/portfolio/prime-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-desk.webp    370w,
+                          ./images/portfolio/prime-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/prime-desk.jpg    370w,
+                          ./images/portfolio/prime-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/prime-desk.jpg"
+                        alt="Проєкт Prime"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -278,12 +537,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/boxex.jpg"
-                      alt="Проєкт Boxes"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-mob.webp    450w,
+                          ./images/portfolio/boxex-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-mob.jpg    450w,
+                          ./images/portfolio/boxex-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-tab.webp    354w,
+                          ./images/portfolio/boxex-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-tab.jpg    354w,
+                          ./images/portfolio/boxex-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-desk.webp    370w,
+                          ./images/portfolio/boxex-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/boxex-desk.jpg    370w,
+                          ./images/portfolio/boxex-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/boxex-desk.jpg"
+                        alt="Проєкт Boxes"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -304,12 +628,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/inspiration.jpg"
-                      alt="Inspiration has no Borders"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-mob.webp    450w,
+                          ./images/portfolio/inspiration-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-mob.jpg    450w,
+                          ./images/portfolio/inspiration-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-tab.webp    354w,
+                          ./images/portfolio/inspiration-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-tab.jpg    354w,
+                          ./images/portfolio/inspiration-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-desk.webp    370w,
+                          ./images/portfolio/inspiration-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/inspiration-desk.jpg    370w,
+                          ./images/portfolio/inspiration-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/inspiration-desk.jpg"
+                        alt="Inspiration has no Borders"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -330,12 +719,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/limited-edition.jpg"
-                      alt="Видання Limited Edition"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-mob.webp    450w,
+                          ./images/portfolio/limited-edition-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-mob.jpg    450w,
+                          ./images/portfolio/limited-edition-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-tab.webp    354w,
+                          ./images/portfolio/limited-edition-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-tab.jpg    354w,
+                          ./images/portfolio/limited-edition-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-desk.webp    370w,
+                          ./images/portfolio/limited-edition-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/limited-edition-desk.jpg    370w,
+                          ./images/portfolio/limited-edition-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/limited-edition-desk.jpg"
+                        alt="Видання Limited Edition"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -355,12 +809,73 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/lab.jpg"
-                      alt="Проєкт LAB"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-mob.webp    450w,
+                          ./images/portfolio/lab-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-mob.jpg    450w,
+                          ./images/portfolio/lab-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-tab.webp    354w,
+                          ./images/portfolio/lab-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-tab.jpg    354w,
+                          ./images/portfolio/lab-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-desk.webp    370w,
+                          ./images/portfolio/lab-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/lab-desk.jpg    370w,
+                          ./images/portfolio/lab-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img loading="lazy" src="./images/portfolio/lab-desk.jpg" alt="Проєкт LAB" />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -381,12 +896,77 @@
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
-                    <img
-                      src="./images/portfolio/growing-business.jpg"
-                      alt="Growing Business"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <!-- Images for mobile -->
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-mob.webp    450w,
+                          ./images/portfolio/growing-business-mob-2x.webp 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-mob.jpg    450w,
+                          ./images/portfolio/growing-business-mob-2x.jpg 900w
+                        "
+                        media="(max-width: 767px)"
+                        sizes="(min-width: 480px) 450px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for tablet -->
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-tab.webp    354w,
+                          ./images/portfolio/growing-business-tab-2x.webp 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-tab.jpg    354w,
+                          ./images/portfolio/growing-business-tab-2x.jpg 708w
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 768px) 354px, 100vw"
+                        type="image/jpeg"
+                      />
+
+                      <!-- Images for desktop -->
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-desk.webp    370w,
+                          ./images/portfolio/growing-business-desk-2x.webp 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/growing-business-desk.jpg    370w,
+                          ./images/portfolio/growing-business-desk-2x.jpg 740w
+                        "
+                        media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 370px, 100vw"
+                        type="image/jpeg"
+                      />
+                      <!-- Default image -->
+                      <img
+                        loading="lazy"
+                        src="./images/portfolio/growing-business-desk.jpg"
+                        alt="Growing Business"
+                      />
+                    </picture>
+
                     <div class="thumb__text--hover">
                       <p class="thumb__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
