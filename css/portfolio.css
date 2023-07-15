@@ -1058,9 +1058,9 @@ body.modal-open, body.menu-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1090,6 +1090,7 @@ body.modal-open, body.menu-open {
   height: 100%;
   min-height: 404px;
   border: 1px solid #ececec;
+  border-radius: 4px;
 }
 .gallery-list__item:hover, .gallery-list__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
