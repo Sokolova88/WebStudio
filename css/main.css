@@ -311,7 +311,7 @@ body {
   color: #757575;
   background-color: #ffffff;
 }
-body.modal-open, body.menu-open {
+body.modal-open {
   overflow: hidden;
 }
 
@@ -989,6 +989,7 @@ body.modal-open, body.menu-open {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 100;
   background-color: rgba(255, 204, 0, 0.4431372549);
   opacity: 1;
   visibility: visible;

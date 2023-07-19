@@ -311,7 +311,7 @@ body {
   color: #757575;
   background-color: #ffffff;
 }
-body.modal-open, body.menu-open {
+body.modal-open {
   overflow: hidden;
 }
 
