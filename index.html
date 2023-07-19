@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Розробка веб-додатку для вашого бізнесу. Використовуємо найкращі практики, зробимо ваш додаток адаптивним від мобілки до десктопа."
+    />
     <title>WebStudio</title>
     <!-- Favicon -->
     <link rel="icon" href="./images/icons/favicon.svg" type="image/svg+xml" />
 
     <!-- Animate css -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -144,8 +148,8 @@
     <main>
       <!-- Section Hero -->
       <section class="hero-section">
-        <div class="hero-section__wrap container">
-          <h1 class="hero-section__title animate__animated animate__pulse">
+        <div class="hero-section__wrap container" data-aos="zoom-in">
+          <h1 class="hero-section__title">
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
@@ -158,7 +162,7 @@
           <h2 class="section__title visually-hidden">Особливості</h2>
           <ul class="feature-section__list">
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap">
+              <div class="feature-section__icon--wrap" data-aos="fade-up" data-aos-duration="3000">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -169,7 +173,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap">
+              <div class="feature-section__icon--wrap" data-aos="fade-up" data-aos-duration="3000">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-clock"></use>
                 </svg>
@@ -180,7 +184,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap">
+              <div class="feature-section__icon--wrap" data-aos="fade-up" data-aos-duration="3000">
                 <svg class="icon" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-diagram"></use>
                 </svg>
@@ -191,7 +195,7 @@
               </p>
             </li>
             <li class="feature-section__item">
-              <div class="feature-section__icon--wrap">
+              <div class="feature-section__icon--wrap" data-aos="fade-up" data-aos-duration="3000">
                 <svg class="icon animate__animated animate__zoomIn" width="70px" height="70px">
                   <use href="./images/icons/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -226,10 +230,11 @@
                     loading="lazy"
                     src="./images/works/desktop.jpg"
                     alt="Розробка додатків для робочого столу"
+                    width="370"
                   />
                 </picture>
 
-                <h3 class="work-section__desc">Десктопні додатки</h3>
+                <h3 class="work-section__desc" data-aos="flip-up">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-section__item">
@@ -249,10 +254,11 @@
                     loading="lazy"
                     src="./images/works/phone_app.jpg"
                     alt="Розробка додатків для телефону"
+                    width="370"
                   />
                 </picture>
 
-                <h3 class="work-section__desc">Мобільні додатки</h3>
+                <h3 class="work-section__desc" data-aos="flip-up">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work-section__item">
@@ -272,10 +278,11 @@
                     loading="lazy"
                     src="./images/works/tab_app.jpg"
                     alt="Розробка додатків для планшету"
+                    width="370"
                   />
                 </picture>
 
-                <h3 class="work-section__desc">Дизайнерські рішення</h3>
+                <h3 class="work-section__desc" data-aos="flip-up">Дизайнерські рішення</h3>
               </div>
             </li>
           </ul>
@@ -286,7 +293,12 @@
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-section___list">
-            <li class="team-section___item">
+            <li
+              class="team-section___item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <!-- Images for desktop -->
                 <source
@@ -391,7 +403,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section___item">
+            <li
+              class="team-section___item"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <!-- Images for desktop -->
                 <source
@@ -505,7 +522,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section___item">
+            <li
+              class="team-section___item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <!-- Images for desktop -->
                 <source
@@ -555,7 +577,7 @@
 
                 <img
                   loading="lazy"
-                  src="./images/team/marketing.jpg"
+                  src="./images/team/marketing-desk.jpg"
                   alt="Микола Тарасов Marketing"
                 />
               </picture>
@@ -619,7 +641,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-section___item">
+            <li
+              class="team-section___item"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <!-- Images for desktop -->
                 <source
@@ -655,7 +682,11 @@
                   type="image/jpeg"
                 />
 
-                <img loading="lazy" src="./images/team/ui.jpg" alt="Михайло Єрмаков UI Designer" />
+                <img
+                  loading="lazy"
+                  src="./images/team/ui-desk.jpg"
+                  alt="Михайло Єрмаков UI Designer"
+                />
               </picture>
 
               <div class="team-section___desc">
@@ -725,7 +756,12 @@
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-section__list">
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -738,7 +774,12 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -751,7 +792,12 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -764,7 +810,12 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -777,7 +828,12 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -790,7 +846,12 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-section__item">
+            <li
+              class="clients-section__item"
+              data-aos="flip-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a
                 href=""
                 target="_blank"
@@ -999,6 +1060,13 @@
       </div>
     </div>
 
+    <!-- Script for body-scroll-lock -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Script for dynamic operation of the mobile-burger-menu -->
     <script src="./js/burger-menu.js"></script>
     <!-- Script for dynamic operation of the modal window -->
