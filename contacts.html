@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Розробка веб-додатку для вашого бізнесу. Використовуємо найкращі практики, зробимо ваш додаток адаптивним від мобілки до десктопа."
+    />
+    <title>WebStudio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./images/icons/favicon.svg" type="image/svg+xml" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/contacts.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+          <!-- Logo company -->
+          <a class="logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
+
+          <!-- Mobile menu button -->
+          <button
+            type="button"
+            class="burger-button"
+            aria-expanded="false"
+            aria-controls="nav-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Перемикач меню навігації">
+              <use
+                class="icon burger-button__icon-menu"
+                href="./images/icons/sprite.svg#icon-burger-menu"
+              ></use>
+              <use
+                class="icon burger-button__icon-close"
+                href="./images/icons/sprite.svg#icon-burger-close"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- A wrapper of the menu -->
+          <div class="nav-container" id="nav-container" data-menu>
+            <!-- Nav-menu -->
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link nav-list__link--current" href="./contacts.html"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+
+            <!-- Contacts -->
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link contacts-list__link--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg
+                    class="contacts-list__icon contacts-list__icon--mail icon"
+                    width="16px"
+                    height="12px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link contacts-list__link--tel" href="tel:+380961111111">
+                  <svg
+                    class="contacts-list__icon contacts-list__icon--tel icon"
+                    width="10px"
+                    height="16px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <!-- Social list for mobile menu only -->
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Instagram"
+                  class="mobile-social__link"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Twitter"
+                  class="mobile-social__link"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Facebook"
+                  class="mobile-social__link"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на LinkedIn"
+                  class="mobile-social__link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section contacts-section">
+        <div class="container">
+          <h1 class="visually-hidden">Наші контакти</h1>
+          <!-- Adress list -->
+          <div class="location">
+            <h2 class="section__title">Як нас знайти</h2>
+
+            <div class="location__map">
+              <iframe
+                class="location__map-google"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7783491247756!2d30.536379507656864!3d50.42660120494066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1690835442031!5m2!1sru!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <address class="location__address address">
+              <ul class="location__address__list address__list">
+                <li class="location__address__item address__item">
+                  <a
+                    class="location__address__link address__link address__link--map"
+                    href="https://goo.gl/maps/79TpedgeX9p1C9EH6"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="location__address__item address__item">
+                  <a class="location__address__link address__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="location__address__item address__item">
+                  <a class="location__address__link address__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Social links -->
+          <div class="social">
+            <h2 class="section__title">Ми в соцмережах</h2>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Instagram"
+                  class="social-list__link"
+                >
+                  <svg
+                    class="social-list__icon--contact social-list__icon icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Twitter"
+                  class="social-list__link"
+                >
+                  <svg
+                    class="social-list__icon--contact social-list__icon icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на Facebook"
+                  class="social-list__link"
+                >
+                  <svg
+                    class="social-list__icon--contact social-list__icon icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Посилання на LinkedIn"
+                  class="social-list__link"
+                >
+                  <svg
+                    class="social-list__icon--contact social-list__icon icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-form">
+            <!-- A form's subscribe -->
+            <form method="POST" action="javascript:void(0);" class="subscribe-form">
+              <label>
+                <h2 class="section__title">Підпишіться на розсилку</h2>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="subscribe-form__input--contact subscribe-form__input"
+                />
+              </label>
+              <button type="submit" class="button button-submit">
+                Підписатися
+                <svg class="icon button-submit__icon--send" width="24px" height="24px">
+                  <use href="./images/icons/sprite.svg#icon-btn-send"></use>
+                </svg>
+                <svg class="icon button-submit__icon--wink" width="24px" height="24px">
+                  <use href="./images/icons/sprite.svg#icon-btn-wink"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer footer--contact">
+      <div class="footer__copy footer__copy--contact">
+        <p class="footer__copy--text">
+          Copyright &#169;
+          <svg class="icon icon-heart" width="28px" height="28px">
+            <use href="./images/icons/sprite.svg#icon-heart"></use>
+          </svg>
+          by Anna SokoLova
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script for body-scroll-lock -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script for dynamic operation of the mobile-burger-menu -->
+    <script src="./js/burger-menu.js"></script>
+  </body>
+</html>
