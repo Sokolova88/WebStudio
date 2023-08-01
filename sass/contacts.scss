@@ -1,0 +1,30 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+//Modern-normalize
+@import './base/normalize';
+
+// Utils
+@import './utils/variables';
+@import './utils/globalReset';
+@import './utils/breakpoints';
+@import './utils/visuallyHidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+// Base
+@import './base/common';
+
+// Components
+@import './components/logo';
+@import './components/navigate';
+@import './components/contacts';
+@import './components/buttons';
+@import './components/social';
+@import './components/address';
+@import './components/subscribeForm';
+
+// Layouts
+@import './layouts/header';
+@import './layouts/contactsSection';
+@import './layouts/footer';
