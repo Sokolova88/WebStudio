@@ -1668,6 +1668,10 @@ body.modal-open {
   }
 }
 
+.footer--contact {
+  padding-top: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .footer--flex {
     -ms-flex-wrap: wrap;
@@ -1727,6 +1731,12 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer__copy {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__copy--contact {
+    margin-top: 0;
   }
 }
 
