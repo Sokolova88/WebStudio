@@ -127,7 +127,7 @@
 .nav-list__link {
   display: block;
   @include fontsProperties($fs: 40px, $fw: 500, $lh: 1.2);
-  color: #212121;
+  color: $dark-color;
 
   transition: color $duration $timing-function;
 

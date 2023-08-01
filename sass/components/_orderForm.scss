@@ -109,7 +109,7 @@
 .order-form__check-icon {
   min-width: 16px;
   min-height: 16px;
-  border: 2px solid #212121;
+  border: 2px solid $dark-color;
   border-radius: 2px;
 
   transition: transform $duration $timing-function;
