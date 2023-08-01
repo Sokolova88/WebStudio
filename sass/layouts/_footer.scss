@@ -10,6 +10,10 @@
   }
 }
 
+.footer--contact {
+  padding-top: 0px;
+}
+
 .footer--flex {
   @media screen and (min-width: $tablet) {
     flex-wrap: wrap;
@@ -54,6 +58,12 @@
 
   @media screen and (min-width: $desktop) {
     margin-top: 60px;
+  }
+}
+
+.footer__copy--contact {
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
   }
 }
 
