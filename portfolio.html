@@ -153,25 +153,27 @@
           <!-- filter button list -->
           <ul class="filter">
             <li class="filter__item">
-              <button class="filter-button" type="button">Усі</button>
+              <button class="filter-button filter-button--active" type="button" data-id="btn-all">
+                Усі
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter-button" type="button">Веб-сайти</button>
+              <button class="filter-button" type="button" data-id="btn-websites">Веб-сайти</button>
             </li>
             <li class="filter__item">
-              <button class="filter-button" type="button">Додатки</button>
+              <button class="filter-button" type="button" data-id="btn-apps">Додатки</button>
             </li>
             <li class="filter__item">
-              <button class="filter-button" type="button">Дизайн</button>
+              <button class="filter-button" type="button" data-id="btn-design">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter-button" type="button">Маркетинг</button>
+              <button class="filter-button" type="button" data-id="btn-marketing">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Gallery of works -->
           <ul class="gallery-list gallery-list--mt">
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-websites" id="btn-websites">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -262,7 +264,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-design" id="btn-design">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -353,7 +355,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-apps" id="btn-apps">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -444,7 +446,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-marketing" id="btn-marketing">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -535,7 +537,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-apps" id="btn-apps">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -626,7 +628,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-websites" id="btn-websites">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -717,7 +719,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-design" id="btn-design">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -807,7 +809,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-marketing" id="btn-marketing">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -894,7 +896,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item btn-apps" id="btn-apps">
               <a href="" class="gallery-list__link">
                 <div class="thumb">
                   <div class="thumb__overlay">
@@ -1101,6 +1103,7 @@
       </div>
     </footer>
 
+    <script src="./js/filter-btn.js"></script>
     <!-- Script for body-scroll-lock -->
     <script
       defer
